@@ -1,0 +1,14 @@
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/controllers/ReservationController.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/models/Jardin.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/services/ReservationService.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/utils/JDBCConnection.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/services/JardinService.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/dao/IReservationDAO.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/controllers/AvailabilityController.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/models/DemandeReservation.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/dao/ReservationDAO.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/models/Reservation.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/Main.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/models/ReservationStatus.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/utils/Config.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5190/ProjetSeul/reservation/src/main/java/reservation/utils/JardinDataAccess.java

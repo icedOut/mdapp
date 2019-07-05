@@ -1,0 +1,101 @@
+
+CREATE TABLE UTILISATEUR(
+  codeUsager TEXT UNIQUE,
+  typePermission VARCHAR(60) CHECK(typePermission IN('CREER_DOSSIER','LIRE_DOSSIER','MODIFIER_DOSSIER','RECONSTITUER_DOSSIER')),
+  hash VARCHAR(40) UNIQUE,
+  salt VARCHAR(40) UNIQUE,  
+  PRIMARY KEY(codeUsager)
+);
+
+CREATE TABLE PATIENT(
+  id INTEGER UNIQUE,
+  codeUsager TEXT NOT NULL,
+  nom VARCHAR(40) NOT NULL,
+  prenom VARCHAR(40) NOT NULL,
+  codeRAMQ VARCHAR(40) NOT NULL,
+  dateNaissance DATE NOT NULL,
+  nas VARCHAR(40) NOT NULL,
+  genre VARCHAR(40) CHECK(Genre IN('HOMME','FEMME')),
+  courriel VARCHAR(40) NOT NULL,
+  numeroTelephone VARCHAR(40) NOT NULL,
+  typeTelephone VARCHAR(40) CHECK(TypeTelephone IN('MOBILE','MAISON','TRAVAIL')),
+  numPorte  VARCHAR(40) NOT NULL,
+  numAppartement VARCHAR(40),
+  nomRue VARCHAR(40) NOT NULL,
+  ville VARCHAR(40) NOT NULL,
+  codePostal VARCHAR(40) NOT NULL,
+  nomParent1 VARCHAR(40) NOT NULL,
+  prenomParent1 VARCHAR(40) NOT NULL,
+  nomParent2 VARCHAR(40) NOT NULL,
+  prenomParent2 VARCHAR(40) NOT NULL,
+
+  PRIMARY KEY(id),
+  FOREIGN KEY(codeUsager) REFERENCES UTILISATEUR(codeUsager)
+);
+
+CREATE TABLE PERSONNEL_SANTE(
+  idPersonnel INTEGER,
+  codeUsager VARCHAR(40) NOT NULL,
+  PRIMARY KEY (idPersonnel),
+  FOREIGN KEY (codeUsager) REFERENCES UTILISATEUR(codeUsager)
+);
+
+
+
+CREATE TABLE DOSSIER_MEDICAL(
+  id INTEGER NOT NULL,
+  idPatient INTEGER NOT NULL,
+  etatPrecedent INTEGER,
+  dateModif DATE NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (idPatient) REFERENCES PATIENT(id)
+);
+
+
+
+CREATE TABLE ANTECEDENT_MEDICAL(
+  id INTEGER NOT NULL,
+  idDossier INTEGER,
+  debutMaladie DATE,
+  finMaladie DATE,
+  diagnostic TEXT,
+  nomTraitement TEXT,
+  medicament TEXT,
+  PRIMARY KEY(id)
+  FOREIGN KEY(idDossier) REFERENCES DOSSIER_MEDICAL(id)
+);
+
+CREATE TABLE ETABLISSEMENT_MEDICAL(
+  id INTEGER NOT NULL,
+  nom VARCHAR(40) NOT NULL,
+  PRIMARY KEY(id)
+);
+
+
+CREATE TABLE VISITE_MEDICALE(
+  id INTEGER NOT NULL,
+  idDossier INTEGER NOT NULL,
+  dateVisite DATE,
+  notes VARCHAR(40) NOT NULL,
+  resume VARCHAR(250) NOT NULL,
+  diagnostic VARCHAR(40) NOT NULL,
+  nomTraitement TEXT,
+  medicament TEXT,
+  idEtablissement INTEGER,
+  PRIMARY KEY(id),
+  FOREIGN KEY(idEtablissement) REFERENCES ETABLISSEMENT_MEDICAL(id)
+  FOREIGN KEY(idDossier) REFERENCES DOSSIER_MEDICAL(id)
+);
+
+
+
+INSERT INTO UTILISATEUR VALUES("ocampeau", "MODIFIER_DOSSIER","17ed5828ed832c5738a923d600a070c0","5f4dcc3b5aa765d61d8327deb882cf99");
+INSERT INTO UTILISATEUR VALUES("medecin1", "MODIFIER_DOSSIER","17ed5828ed832c5738a923d600a070c","5f4dcc3b5aa765d61d8327deb882cf9");
+INSERT INTO PATIENT VALUES(1, "ocampeau", "Olivier", "Campeau", "RAMQ00000001","1987-23-02", "000-111-222", "HOMME", "olivier@ramq.com","514-000-0000", "MOBILE", "23", "B2", "Principale", "Montreal", "H0H 0H0", "John", "Leclair", "Mario", "Lemieux");
+INSERT INTO PERSONNEL_SANTE VALUES(1, "medecin1");
+INSERT INTO DOSSIER_MEDICAL VALUES(1, 1, 1, '2019-07-05 22:52:49');
+INSERT INTO ANTECEDENT_MEDICAL VALUES(1, 1, '2019-07-05 22:52:49', '2019-07-05 22:52:49', "Grippe d'homme", "De la patience", "Kraft Dinner");
+INSERT INTO ETABLISSEMENT_MEDICAL VALUES(1, "Clinique Super Bonne Inc.");
+INSERT INTO VISITE_MEDICALE VALUES(1, 1, '2019-07-05 22:52:49', "Voici des notes", "Voici une resume", "Voici un diagnostic", "Traitement", "Medicament", 1);
+
+
