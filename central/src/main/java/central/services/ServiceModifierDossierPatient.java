@@ -11,31 +11,21 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 public class ServiceModifierDossierPatient{
+
+
     public ServiceModifierDossierPatient(){
         
     }
 
 
+    public Optional<DossierMedical> annulerDerniereModification(DossierMedical dossier){
+        int nouvelId = DossierMedicalUpdater.annulerDerniereModification(dossier);
+        return DossierMedicalProvider.getDossier(nouvelId);
+    }
 
 
-    public DossierMedical annulerDerniereModification(int dossierId){
-        try{
-            DTODossierMedical dossierDto = JDBCConnection.getDossierDAO().queryForId(String.valueOf(dossierId));
-            Optional<DossierMedical> ancienneVersion = DossierMedicalProvider.getDossier(dossierDto.etatPrecedent);
-            if(!ancienneVersion.isPresent()) return null;
-            DossierMedical etatARestaurer = ancienneVersion.get();
-
-
-            int idDossierRestaurer = DossierMedicalUpdater.updateDossierMedical(etatARestaurer);
-
-            Optional<DossierMedical> dossierRestaurer = DossierMedicalProvider.getDossier(dossierDto.etatPrecedent);
-            if(!dossierRestaurer.isPresent()) return null;
-            return dossierRestaurer.get();
-        }
-        catch(SQLException sqle){
-            System.out.println(sqle.getCause());
-            return null;
-        }
-
+    public Optional<DossierMedical> modifierDossierMedical(DossierMedical dossier){
+        int nouvelId = DossierMedicalUpdater.modifierDossierMedical(dossier);
+        return DossierMedicalProvider.getDossier(nouvelId);
     }
 }

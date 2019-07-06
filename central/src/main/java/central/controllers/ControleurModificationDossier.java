@@ -1,6 +1,5 @@
 package central.controllers;
 
-import central.models.DemandeAnnulationModification;
 import central.models.DossierMedical;
 import central.services.ServiceModifierDossierPatient;
 import central.utils.DossierMedicalProvider;
@@ -14,29 +13,33 @@ import java.util.Optional;
 @Controller
 public class ControleurModificationDossier {
 
-    @PutMapping(value = "/dossier/modification")
+    @PutMapping(value = "/modification")
     @ResponseBody
     public ResponseEntity modifierDossierPatient(@RequestBody DossierMedical modification, @CookieValue String token){
 
         //TODO NEED TO CHECK TOKEN
-        int idOfNewModif = DossierMedicalUpdater.updateDossierMedical(modification);
-        Optional<DossierMedical> newDossier = DossierMedicalProvider.getDossier(idOfNewModif);
-        if(newDossier.isPresent()){
-            return ResponseEntity.status(200).body(newDossier.get());
+        ServiceModifierDossierPatient serviceModif = new ServiceModifierDossierPatient();
+        Optional<DossierMedical> dossierModifier = serviceModif.modifierDossierMedical(modification);
+        if(!dossierModifier.isPresent()){
+            return ResponseEntity.status(400).body(null);
         }
-        return ResponseEntity.status(200).body(null);
+        return ResponseEntity.status(200).body(dossierModifier.get());
+
 
     }
 
 
-    @DeleteMapping(value = "/dossier/modification")
+    @DeleteMapping(value = "/modification")
     @ResponseBody
     public ResponseEntity<DossierMedical> annulerDerniereModification(@RequestBody DossierMedical modification, @CookieValue String token){
 
         //TODO NEED TO CHECK TOKEN
         ServiceModifierDossierPatient serviceModif = new ServiceModifierDossierPatient();
-        DossierMedical dossierRestaurer = serviceModif.annulerDerniereModification(modification.id);
-        return ResponseEntity.status(200).body(dossierRestaurer);
+        Optional<DossierMedical> dossierRestaurer = serviceModif.annulerDerniereModification(modification);
+        if(!dossierRestaurer.isPresent()){
+            return ResponseEntity.status(400).body(null);
+        }
+        return ResponseEntity.status(200).body(dossierRestaurer.get());
     }
 
 }

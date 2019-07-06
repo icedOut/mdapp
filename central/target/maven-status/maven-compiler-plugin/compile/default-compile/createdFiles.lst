@@ -34,6 +34,7 @@ central/models/Patient.class
 central/utils/DossierMedicalProvider.class
 central/models/Medecin.class
 central/dto/DTOPersonnelSante.class
+central/utils/DossierMedicalMapper.class
 central/models/EtablissementSante.class
 central/models/Genre.class
 central/dao/DAOPatient.class

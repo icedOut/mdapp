@@ -10,6 +10,7 @@ CREATE TABLE UTILISATEUR(
 CREATE TABLE PATIENT(
   id INTEGER UNIQUE,
   codeUsager TEXT NOT NULL,
+  etatDossier INTEGER NOT NULL,
   nom VARCHAR(40) NOT NULL,
   prenom VARCHAR(40) NOT NULL,
   codeRAMQ VARCHAR(40) NOT NULL,
@@ -91,7 +92,7 @@ CREATE TABLE VISITE_MEDICALE(
 
 INSERT INTO UTILISATEUR VALUES("ocampeau", "MODIFIER_DOSSIER","17ed5828ed832c5738a923d600a070c0","5f4dcc3b5aa765d61d8327deb882cf99");
 INSERT INTO UTILISATEUR VALUES("medecin1", "MODIFIER_DOSSIER","17ed5828ed832c5738a923d600a070c","5f4dcc3b5aa765d61d8327deb882cf9");
-INSERT INTO PATIENT VALUES(1, "ocampeau", "Olivier", "Campeau", "RAMQ00000001","1987-23-02", "000-111-222", "HOMME", "olivier@ramq.com","514-000-0000", "MOBILE", "23", "B2", "Principale", "Montreal", "H0H 0H0", "John", "Leclair", "Mario", "Lemieux");
+INSERT INTO PATIENT VALUES(1, "ocampeau", 1, "Olivier", "Campeau", "RAMQ00000001","1987-23-02", "000-111-222", "HOMME", "olivier@ramq.com","514-000-0000", "MOBILE", "23", "B2", "Principale", "Montreal", "H0H 0H0", "John", "Leclair", "Mario", "Lemieux");
 INSERT INTO PERSONNEL_SANTE VALUES(1, "medecin1");
 INSERT INTO DOSSIER_MEDICAL VALUES(1, 1, 1, '2019-07-05 22:52:49');
 INSERT INTO ANTECEDENT_MEDICAL VALUES(1, 1, '2019-07-05 22:52:49', '2019-07-05 22:52:49', "Grippe d'homme", "De la patience", "Kraft Dinner");

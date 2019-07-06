@@ -14,6 +14,9 @@ public class DTOPatient{
   @DatabaseField(columnName = "codeUsager")
   public int codeUsager;
 
+  @DatabaseField(columnName = "etatDossier")
+  public int etatDossier;
+
   @DatabaseField(columnName = "nom")
   public String nom;
 

@@ -2,12 +2,13 @@ package central.utils;
 
 import central.dto.DTOAntecedentMedical;
 import central.dto.DTODossierMedical;
+import central.dto.DTOPatient;
 import central.dto.DTOVisiteMedicale;
 import central.models.DossierMedical;
+import org.sqlite.JDBC;
 
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,88 +17,93 @@ public class DossierMedicalUpdater {
   static SimpleDateFormat dateFormater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
   // Retourne le ID du nouveau dossier
-  public static int updateDossierMedical(DossierMedical modification){
+  public static int modifierDossierMedical(DossierMedical modification) {
+    try {
+      int idPatient = JDBCConnection.getDossierDAO().queryForId(String.valueOf(modification.id)).idPatient;
+      DTODossierMedical dtoDossier = DossierMedicalMapper.mapToDTO(modification, idPatient);
+      JDBCConnection.getDossierDAO().create(dtoDossier);
+      List<DTOAntecedentMedical> dtoAntecedents = DossierMedicalMapper.convertirAntecedentVersDto(modification, dtoDossier.id);
+      List<DTOVisiteMedicale> dtoVisites = DossierMedicalMapper.convertirVisitesVersDto(modification, dtoDossier.id);
+
+
+      addAntecedentsToDatabase(dtoAntecedents);
+      addVisitesToDatabase(dtoVisites);
+      updatePatient(dtoDossier.idPatient, dtoDossier.id);
+      return dtoDossier.id;
+
+    }
+    catch (SQLException sqle) {
+      System.out.println(sqle.getCause());
+    }
+    return -1;
+  }
+
+  public static int annulerDerniereModification(DossierMedical dossier){
     try{
 
-      int idPatient = obtenirIdPatient(modification);
-      DTODossierMedical dtoDossier = mapToDTO(modification, idPatient);
 
-      int idNouvelleModification = creerDossierDansBd(dtoDossier);
-      List<DTOAntecedentMedical> dtoAntecedents = convertirAntecedentVersDto(modification, dtoDossier.id);
-      for(int i = 0; i < dtoAntecedents.size(); ++i){
-        addAntecedentToDatabase(dtoAntecedents.get(i));
-      }
+      DTODossierMedical dossierDto = JDBCConnection.getDossierDAO().queryForId(String.valueOf(dossier.id));
+      DTODossierMedical versionPrecedente = JDBCConnection.getDossierDAO().queryForId(String.valueOf(dossierDto.etatPrecedent));
 
-      List<DTOVisiteMedicale> dtoVisites = convertirVisitesVersDto(modification, dtoDossier.id);
-      for(int i = 0; i < dtoVisites.size(); ++i){
-        creerVisiteDansBd(dtoVisites.get(i));
-      }
+      JDBCConnection.getDossierDAO().create(versionPrecedente);
 
-      return idNouvelleModification;
+      int idDossierPrecedent = dossierDto.id;
+      int nouvelId = versionPrecedente.id;
+
+      List<DTOAntecedentMedical> dtoAntecedents = JDBCConnection
+              .getAntecedentDAO()
+              .queryForEq("idDossier", dossierDto.etatPrecedent)
+              .stream()
+              .map(a -> {
+                a.idDossier = nouvelId;
+                return a;
+              })
+              .collect(Collectors.toList());
+      List<DTOVisiteMedicale> dtoVisites = JDBCConnection
+              .getVisiteDAO()
+              .queryForEq("idDossier", dossierDto.etatPrecedent)
+              .stream()
+              .map(v -> {
+                v.idDossier = nouvelId;
+                return v;
+              })
+              .collect(Collectors.toList());
+
+
+      addAntecedentsToDatabase(dtoAntecedents);
+      addVisitesToDatabase(dtoVisites);
+      updatePatient(versionPrecedente.idPatient, nouvelId);
+      return versionPrecedente.id;
+
     }
-    catch(SQLException e){
-      // Si une erreur, on retourne un ID négatif pour indiquer que le dossier n'a pas été crée
-      return -1;
+    catch(SQLException sqle){
+      System.out.println(sqle.getCause());
+    }
+    catch(Exception e){
+      System.out.println(e.toString());
+
+    }
+    return -1;
+  }
+
+
+  private static void updatePatient(int patientId, int etatId) throws SQLException{
+    DTOPatient patient = JDBCConnection.getPatientDAO().queryForId(String.valueOf(patientId));
+    patient.etatDossier = etatId;
+    JDBCConnection.getPatientDAO().update(patient);
+  }
+
+
+  private static void addAntecedentsToDatabase(List<DTOAntecedentMedical> antecedents) throws  SQLException{
+    for(int i = 0; i < antecedents.size(); ++i){
+      JDBCConnection.getAntecedentDAO().create(antecedents.get(i));
     }
   }
 
-
-
-  private static int obtenirIdPatient(DossierMedical modification) throws SQLException{
-    return JDBCConnection.getDossierDAO().queryForId(String.valueOf(modification.id)).idPatient;
+  private static void addVisitesToDatabase(List<DTOVisiteMedicale> visites) throws  SQLException{
+    for(int i = 0; i < visites.size(); ++i){
+      JDBCConnection.getVisiteDAO().create(visites.get(i));
+    }
   }
-
-
-  private static DTODossierMedical mapToDTO(DossierMedical modif, int idPatient) throws SQLException {
-    DTODossierMedical dtoDossier = new DTODossierMedical();
-    dtoDossier.etatPrecedent = modif.id;
-    dtoDossier.idPatient = idPatient;
-    dtoDossier.dateModif = dateFormater.format(new Date());
-    dtoDossier.id = modif.id;
-    return dtoDossier;
-  }
-
-
-  private static List<DTOAntecedentMedical> convertirAntecedentVersDto(DossierMedical modif, int newId) {
-    return modif.antecedents.stream().map(a -> {
-      DTOAntecedentMedical dtoAnte = new DTOAntecedentMedical();
-      dtoAnte.finMaladie = dateFormater.format(a.finMaladie);
-      dtoAnte.debutMaladie = dateFormater.format(a.debutMaladie);
-      dtoAnte.diagnostic = a.diagnostic;
-      dtoAnte.medicament = a.traitement.medicament;
-      dtoAnte.nomTraitement = a.traitement.nomTraitement;
-      dtoAnte.idDossier = newId;
-      return dtoAnte;
-    }).collect(Collectors.toList());
-  }
-
-  private static void addAntecedentToDatabase(DTOAntecedentMedical antecedent) throws  SQLException{
-    JDBCConnection.getAntecedentDAO().create(antecedent);
-  }
-
-  private static List<DTOVisiteMedicale> convertirVisitesVersDto(DossierMedical modif, int newId) {
-    return modif.visites.stream().map(v -> {
-      DTOVisiteMedicale dtoVisite = new DTOVisiteMedicale();
-      dtoVisite.dateVisite = dateFormater.format(v.dateVisite);
-      dtoVisite.idDossier = newId;
-      dtoVisite.diagnostic = v.diagnostic;
-      dtoVisite.notes = v.notes;
-      dtoVisite.resume = v.resume;
-      dtoVisite.medicament = v.traitement.medicament;
-      dtoVisite.nomTraitement = v.traitement.nomTraitement;
-      dtoVisite.idEtablissement = v.etablissement.id;
-      return dtoVisite;
-    }).collect(Collectors.toList());
-  }
-
-  private static void creerVisiteDansBd(DTOVisiteMedicale visite) throws  SQLException{
-    JDBCConnection.getVisiteDAO().create(visite);
-  }
-
-  private static int creerDossierDansBd(DTODossierMedical dossier) throws SQLException{
-    JDBCConnection.getDossierDAO().create(dossier);
-    return dossier.id;
-  }
-
 
 }
