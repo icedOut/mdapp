@@ -20,10 +20,9 @@ public class DossierMedicalUpdater {
     try{
 
       int idPatient = obtenirIdPatient(modification);
-
       DTODossierMedical dtoDossier = mapToDTO(modification, idPatient);
-      creerDossierDansBd(dtoDossier);
 
+      int idNouvelleModification = creerDossierDansBd(dtoDossier);
       List<DTOAntecedentMedical> dtoAntecedents = convertirAntecedentVersDto(modification, dtoDossier.id);
       for(int i = 0; i < dtoAntecedents.size(); ++i){
         addAntecedentToDatabase(dtoAntecedents.get(i));
@@ -34,9 +33,9 @@ public class DossierMedicalUpdater {
         creerVisiteDansBd(dtoVisites.get(i));
       }
 
-      return dtoDossier.id;
+      return idNouvelleModification;
     }
-    catch(Exception e){
+    catch(SQLException e){
       // Si une erreur, on retourne un ID négatif pour indiquer que le dossier n'a pas été crée
       return -1;
     }
@@ -54,6 +53,7 @@ public class DossierMedicalUpdater {
     dtoDossier.etatPrecedent = modif.id;
     dtoDossier.idPatient = idPatient;
     dtoDossier.dateModif = dateFormater.format(new Date());
+    dtoDossier.id = modif.id;
     return dtoDossier;
   }
 
@@ -94,8 +94,9 @@ public class DossierMedicalUpdater {
     JDBCConnection.getVisiteDAO().create(visite);
   }
 
-  private static void creerDossierDansBd(DTODossierMedical dossier) throws SQLException{
+  private static int creerDossierDansBd(DTODossierMedical dossier) throws SQLException{
     JDBCConnection.getDossierDAO().create(dossier);
+    return dossier.id;
   }
 
 

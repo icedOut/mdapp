@@ -18,7 +18,10 @@ public class Patient implements Utilisateur{
   public Coordonnee coordonnee;
   public Parent parent1;
   public Parent parent2;
-  public DossierMedical dossier;
+
+  public Patient(){
+    this.coordonnee = new Coordonnee();
+  }
 
 
 

@@ -1,14 +1,10 @@
 package central.utils;
 
 import central.dao.DAODossierMedical;
-import central.dto.DTOAntecedentMedical;
-import central.dto.DTODossierMedical;
-import central.dto.DTOEtablissementSante;
-import central.dto.DTOVisiteMedicale;
-import central.models.AntecedentMedical;
-import central.models.DossierMedical;
-import central.models.VisiteMedicale;
+import central.dto.*;
+import central.models.*;
 
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Optional;
@@ -20,12 +16,10 @@ public class DossierMedicalProvider {
 
   public static Optional<DossierMedical> getDossier(int dossierId){
     try{
-      DAODossierMedical dossierDao = JDBCConnection.getDossierDAO();
-
       DossierMedical dossierToCreate = new DossierMedical();
       String id = String.valueOf(dossierId);
-      DTODossierMedical dbDossier = dossierDao.queryForId(id);
-
+      DTODossierMedical dbDossier = JDBCConnection.getDossierDAO().queryForId(id);
+      DTOPatient dbPatient = JDBCConnection.getPatientDAO().queryForId(String.valueOf(dbDossier.idPatient));
 
       List<DTOVisiteMedicale> dbVisites = JDBCConnection
               .getVisiteDAO()
@@ -39,13 +33,67 @@ public class DossierMedicalProvider {
 
       dossierToCreate.antecedents = mapAntecedent(dbAntecedents);
       dossierToCreate.visites = mapVisite(dbVisites);
+      dossierToCreate.patient = mapPatient(dbPatient);
       dossierToCreate.id = dbDossier.id;
 
       return Optional.of(dossierToCreate);
     }
-    catch(Exception e){
+    catch(SQLException e){
       return Optional.of(null);
     }
+  }
+
+  private static Patient mapPatient(DTOPatient dtoPatient){
+    Patient patient = new Patient();
+    patient.codeRAMQ = dtoPatient.codeRAMQ;
+    patient.genre = Genre.valueOf(dtoPatient.genre);
+    patient.id = dtoPatient.id;
+    patient.nas = dtoPatient.nas;
+    patient.nom = dtoPatient.nom;
+    patient.prenom = dtoPatient.prenom;
+    patient.coordonnee = mapCoordonner(dtoPatient);
+    patient.parent1 = mapParent(dtoPatient.nomParent1, dtoPatient.prenomParent1);
+    patient.parent2 = mapParent(dtoPatient.nomParent2, dtoPatient.prenomParent2);
+    try{
+      patient.dateNaissance = dateFormater.parse(dtoPatient.dateNaissance);
+
+    }
+    catch(Exception e){
+
+    }
+    return patient;
+  }
+
+  private static Coordonnee mapCoordonner(DTOPatient dtoPatient){
+    Coordonnee coords = new Coordonnee();
+    coords.courriel = dtoPatient.courriel;
+    coords.adresse = mapAdresse(dtoPatient);
+    coords.telephone = mapTelephone(dtoPatient);
+    return coords;
+  }
+
+  private static AdresseResidentielle mapAdresse(DTOPatient dtoPatient){
+    AdresseResidentielle adr = new AdresseResidentielle();
+    adr.codePostal = dtoPatient.codePostal;
+    adr.nomRue = dtoPatient.nomRue;
+    adr.numAppartement = dtoPatient.numAppartement;
+    adr.numPorte = dtoPatient.numPorte;
+    adr.ville = dtoPatient.ville;
+    return adr;
+  }
+
+  private static NumeroTelephone mapTelephone(DTOPatient dtoPatient){
+    NumeroTelephone tel = new NumeroTelephone();
+    tel.numero = dtoPatient.numeroTelephone;
+    tel.type = TypeTelephone.valueOf(dtoPatient.typeTelephone);
+    return tel;
+  }
+
+  private static Parent mapParent(String nom, String prenom){
+      Parent p = new Parent();
+      p.nom = nom;
+      p.prenom = prenom;
+      return p;
   }
 
 

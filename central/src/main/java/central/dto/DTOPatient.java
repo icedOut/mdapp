@@ -24,7 +24,7 @@ public class DTOPatient{
   public String codeRAMQ;
 
   @DatabaseField(columnName = "dateNaissance")
-  public Date dateNaissance;
+  public String dateNaissance;
 
   @DatabaseField(columnName = "nas")
   public String nas;
@@ -47,8 +47,8 @@ public class DTOPatient{
   @DatabaseField(columnName = "numAppartement")
   public String numAppartement;
 
-  @DatabaseField(columnName = "numRue")
-  public String numRue;
+  @DatabaseField(columnName = "nomRue")
+  public String nomRue;
 
   @DatabaseField(columnName = "ville")
   public String ville;
