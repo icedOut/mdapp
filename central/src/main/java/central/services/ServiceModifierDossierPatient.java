@@ -23,8 +23,11 @@ public class ServiceModifierDossierPatient{
             DTODossierMedical dossierDto = JDBCConnection.getDossierDAO().queryForId(String.valueOf(dossierId));
             Optional<DossierMedical> ancienneVersion = DossierMedicalProvider.getDossier(dossierDto.etatPrecedent);
             if(!ancienneVersion.isPresent()) return null;
+            DossierMedical etatARestaurer = ancienneVersion.get();
 
-            int idDossierRestaurer = DossierMedicalUpdater.updateDossierMedical(ancienneVersion.get());
+
+            int idDossierRestaurer = DossierMedicalUpdater.updateDossierMedical(etatARestaurer);
+
             Optional<DossierMedical> dossierRestaurer = DossierMedicalProvider.getDossier(dossierDto.etatPrecedent);
             if(!dossierRestaurer.isPresent()) return null;
             return dossierRestaurer.get();

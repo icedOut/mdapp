@@ -12,7 +12,7 @@ import static central.utils.DossierMedicalProvider.*;
 @Controller
 public class ControleurChargementDossier {
 
-    @GetMapping(value = "/ramq/dossier")
+    @GetMapping(value = "/dossier")
     @ResponseBody
     public ResponseEntity telechargerDossierPatient(@RequestParam int id){
         Optional<DossierMedical> dossier = getDossier(id);
