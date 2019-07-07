@@ -15,6 +15,8 @@
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/Medecin.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/UtilisateurRAMQ.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/TypeTelephone.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/services/GestionnaireDossierActif.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/utils/ClientHTTP.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/TypePermission.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/ProfessionelSante.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/Genre.java

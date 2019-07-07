@@ -20,6 +20,8 @@ medecin/models/Utilisateur.class
 medecin/models/Medecin.class
 medecin/models/ProfessionelSante.class
 medecin/models/ReponseAuthentification.class
+medecin/utils/ClientHTTP.class
 medecin/models/Genre.class
 medecin/models/DemandeAnnulationModification.class
+medecin/services/GestionnaireDossierActif.class
 medecin/models/VisiteMedicale.class
