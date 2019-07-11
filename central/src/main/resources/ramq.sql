@@ -90,6 +90,17 @@ CREATE TABLE VISITE_MEDICALE(
 
 
 
+CREATE TABLE SESSION(
+  id INTEGER NOT NULL,
+  idUsager TEXT NOT NULL,
+  token TEXT,
+  expiration DATE NOT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY(idUsager) REFERENCES UTILISATEUR(codeUsager)
+);
+
+
+
 INSERT INTO UTILISATEUR VALUES("ocampeau", "MODIFIER_DOSSIER","17ed5828ed832c5738a923d600a070c0","5f4dcc3b5aa765d61d8327deb882cf99");
 INSERT INTO UTILISATEUR VALUES("medecin1", "MODIFIER_DOSSIER","17ed5828ed832c5738a923d600a070c","5f4dcc3b5aa765d61d8327deb882cf9");
 INSERT INTO PATIENT VALUES(1, "ocampeau", 1, "Olivier", "Campeau", "RAMQ00000001","1987-23-02", "000-111-222", "HOMME", "olivier@ramq.com","514-000-0000", "MOBILE", "23", "B2", "Principale", "Montreal", "H0H 0H0", "John", "Leclair", "Mario", "Lemieux");

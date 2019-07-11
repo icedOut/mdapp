@@ -1,10 +1,9 @@
 package central.services;
 
 
+import central.data.DaoProvider;
 import central.dto.DTOPatient;
 import central.models.DossierMedical;
-import central.utils.DossierMedicalProvider;
-import central.utils.JDBCConnection;
 
 import java.sql.SQLException;
 import java.util.Optional;
@@ -20,7 +19,7 @@ public class ServiceTelechargerDossier{
 
     public Optional<DossierMedical> telechargerDossierMedical(String codeRAMQ){
         try{
-            DTOPatient dtoPatient = JDBCConnection
+            DTOPatient dtoPatient = DaoProvider
                     .getPatientDAO()
                     .queryForEq("codeRAMQ", codeRAMQ).get(0);
             return DossierMedicalProvider.getDossier(dtoPatient.etatDossier);

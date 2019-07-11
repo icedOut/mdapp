@@ -1,13 +1,8 @@
 package central.services;
 
 
-import central.dto.DTODossierMedical;
 import central.models.DossierMedical;
-import central.utils.DossierMedicalProvider;
-import central.utils.DossierMedicalUpdater;
-import central.utils.JDBCConnection;
 
-import java.sql.SQLException;
 import java.util.Optional;
 
 public class ServiceModifierDossierPatient{

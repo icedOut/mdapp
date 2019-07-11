@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-import static central.utils.DossierMedicalProvider.*;
-
 @Controller
 public class ControleurChargementDossier {
 
