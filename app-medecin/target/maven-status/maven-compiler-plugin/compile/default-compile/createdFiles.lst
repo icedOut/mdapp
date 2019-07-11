@@ -12,6 +12,7 @@ medecin/models/TypePermission.class
 medecin/models/UtilisateurRAMQ.class
 medecin/models/EtablissementSante.class
 medecin/models/ModificationDossier.class
+medecin/domaine/GestionnaireDossierActif.class
 medecin/models/PersonnelSante.class
 medecin/models/DossierMedical.class
 medecin/models/AntecedentMedical.class
@@ -23,5 +24,4 @@ medecin/models/ReponseAuthentification.class
 medecin/utils/ClientHTTP.class
 medecin/models/Genre.class
 medecin/models/DemandeAnnulationModification.class
-medecin/services/GestionnaireDossierActif.class
 medecin/models/VisiteMedicale.class

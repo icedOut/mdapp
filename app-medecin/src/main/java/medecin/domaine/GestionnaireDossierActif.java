@@ -6,6 +6,7 @@ import medecin.utils.ClientHTTP;
 public class GestionnaireDossierActif {
 
   public DossierMedical chargerUnDossier(String codeRAMQ){
+
     return ClientHTTP.getDossier(codeRAMQ);
   }
 
