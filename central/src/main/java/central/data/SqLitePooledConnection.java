@@ -10,6 +10,15 @@ import java.util.Properties;
 public class SqLitePooledConnection implements JDBCConnectionHelper{
 
   private static JdbcPooledConnectionSource conn = null;
+  private static SqLitePooledConnection instance = new SqLitePooledConnection();
+
+  private SqLitePooledConnection(){
+
+  }
+
+  public static SqLitePooledConnection getInstance(){
+    return instance;
+  }
 
   @Override
   public JdbcPooledConnectionSource connect() {

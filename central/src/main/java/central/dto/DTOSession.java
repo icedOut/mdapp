@@ -19,7 +19,7 @@ public class DTOSession {
   public String token;
 
   @DatabaseField(columnName = "expiration")
-  public Date expiration;
+  public String expiration;
 
 
 

@@ -8,7 +8,7 @@ import com.j256.ormlite.table.DatabaseTable;
 public class DTOUtilisateur {
 
 
-  @DatabaseField(columnName = "codeUsager")
+  @DatabaseField(id = true, columnName = "codeUsager")
   public String codeUsager;
 
   @DatabaseField(columnName = "typePermission")

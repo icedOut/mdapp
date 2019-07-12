@@ -8,11 +8,11 @@ public class SqLiteConnectionCreator implements JDBCConnectionCreator {
     switch(type){
 
       case POOLED:
-        return new SqLitePooledConnection();
+        return SqLitePooledConnection.getInstance();
 
       case SINGLE:
       default:
-        return new SqLiteSingleConnection();
+        return SqLiteSingleConnection.getInstance();
 
     }
 

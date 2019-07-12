@@ -25,7 +25,7 @@ central/data/SqLitePooledConnection.class
 central/dto/DTOUtilisateur.class
 central/services/ServicePermission.class
 central/models/PersonnelSante.class
-services/central/TelephoneMapper.class
+central/controllers/FiltrePermission.class
 central/models/ProfessionelSante.class
 central/models/TypeTelephone.class
 central/dao/DAOVisiteMedicale.class
@@ -47,6 +47,7 @@ central/models/Patient.class
 central/data/SqLiteConnectionCreator$1.class
 central/models/Medecin.class
 central/dto/DTOPersonnelSante.class
+central/controllers/FiltreAuthentification.class
 central/models/EtablissementSante.class
 central/models/Genre.class
 central/dao/DAOPatient.class
@@ -61,6 +62,7 @@ central/services/ServiceAuthentification.class
 central/dao/DAOEtablissementSante.class
 central/dao/DAOAntecedentMedical.class
 central/data/JDBCConnectionCreator.class
+central/utils/Hasher.class
 central/services/ServiceTelechargerDossier.class
 central/data/SqLiteSingleConnection.class
 central/dto/DTODossierMedical.class

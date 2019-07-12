@@ -15,8 +15,17 @@ import java.util.concurrent.Executor;
 public class SqLiteSingleConnection implements JDBCConnectionHelper {
 
   private static JdbcSingleConnectionSource conn = null;
+  private static SqLiteSingleConnection instance = new SqLiteSingleConnection();
 
 
+  private SqLiteSingleConnection(){
+
+  }
+
+
+  public static SqLiteSingleConnection getInstance(){
+    return instance;
+  }
 
   public JdbcSingleConnectionSource connect(){
     return getConnection();
@@ -33,7 +42,18 @@ public class SqLiteSingleConnection implements JDBCConnectionHelper {
     Properties conf = Config.getConfig();
     String url = conf.getProperty("db_conn_string");
 
-    conn = new JdbcSingleConnectionSource();
+    Properties connectionProps = new Properties();
+    connectionProps.put("user", conf.getProperty("user"));
+    connectionProps.put("password", conf.getProperty("password"));
+
+    try{
+      Connection c = DriverManager.getConnection(url,connectionProps);
+      conn = new JdbcSingleConnectionSource(url, c);
+    }
+    catch(SQLException sqle){
+      System.out.println(sqle.getCause());
+    }
+
 
     return conn;
   }

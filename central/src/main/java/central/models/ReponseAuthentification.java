@@ -3,6 +3,7 @@ package central.models;
 public class ReponseAuthentification {
 
   public boolean success;
+  public String token;
   public String msgErr;
 
   public ReponseAuthentification(boolean success){
