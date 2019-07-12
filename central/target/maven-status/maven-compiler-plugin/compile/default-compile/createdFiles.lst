@@ -14,7 +14,6 @@ central/data/ConnectionType.class
 central/models/DossierMedical.class
 central/mapper/VisiteMedicaleMapper.class
 central/models/Parent.class
-central/services/DossierMedicalUpdater.class
 central/dao/DAOUtilisateur.class
 central/services/EtablissementProvider.class
 central/mapper/CoordonneeMapper.class
@@ -23,6 +22,7 @@ central/mapper/EtablisementMapper.class
 central/data/JDBCConnectionHelper.class
 central/data/SqLitePooledConnection.class
 central/dto/DTOUtilisateur.class
+central/mapper/UtilisateurMapper.class
 central/services/ServicePermission.class
 central/models/PersonnelSante.class
 central/controllers/FiltrePermission.class
@@ -42,6 +42,7 @@ central/mapper/DossierMedicalMapper.class
 central/mapper/AntecedentMapper.class
 central/models/Session.class
 central/models/VisiteMedicale.class
+central/mapper/SessionMapper.class
 central/models/Coordonnee.class
 central/models/Patient.class
 central/data/SqLiteConnectionCreator$1.class
@@ -55,7 +56,6 @@ central/controllers/ControleurAuthentification.class
 central/data/SqLiteConnectionCreator.class
 central/services/ServiceGestionSession.class
 central/models/Traitement.class
-central/services/DossierMedicalProvider.class
 central/mapper/AddresseMapper.class
 central/models/AdresseResidentielle.class
 central/services/ServiceAuthentification.class

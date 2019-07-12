@@ -45,6 +45,10 @@ public class ServiceGestionSession {
         DaoProvider.getSessionDAO().terminerSession(token);
     }
 
+    public static Session obtenirSession(String token){
+        return DaoProvider.getSessionDAO().obtenirSession(token);
+    }
+
 
 
 

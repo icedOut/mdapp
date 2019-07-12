@@ -1,4 +1,4 @@
 package central.models;
 
-public class ProfessionelSante implements PersonnelSante{
+public class ProfessionelSante extends PersonnelSante{
 }

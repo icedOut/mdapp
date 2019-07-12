@@ -1,5 +1,5 @@
 package central.models;
 
-public class UtilisateurRAMQ implements Utilisateur{
+public class UtilisateurRAMQ extends Utilisateur{
   public int idPersonnelRAMQ;
 }

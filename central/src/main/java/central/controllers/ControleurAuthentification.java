@@ -22,7 +22,7 @@ public class ControleurAuthentification {
 
     private static Gson g = new Gson();
 
-    @PostMapping(value = "/authentifier")
+    @PostMapping(value = "/authentification")
     @ResponseBody
     public ReponseAuthentification authentifierUsager(HttpServletResponse response,  @RequestBody DemandeAuthentification demande){
 

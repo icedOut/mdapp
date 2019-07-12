@@ -15,9 +15,9 @@ public class ControleurChargementDossier {
     @ResponseBody
     public ResponseEntity telechargerDossierPatient(@RequestParam String codeRAMQ){
 
-        //TODO NEED TO CHECK TOKEN
+
         ServiceTelechargerDossier serviceTelecharger = new ServiceTelechargerDossier();
-        Optional<DossierMedical> dossier = serviceTelecharger.telechargerDossierMedical(codeRAMQ);
+        Optional<DossierMedical> dossier = serviceTelecharger.telechargerDossierPatient(codeRAMQ);
         if(dossier.isPresent()){
             return ResponseEntity.status(200).body(dossier.get());
         }

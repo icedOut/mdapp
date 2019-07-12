@@ -13,9 +13,9 @@ public class ControleurModificationDossier {
 
     @PutMapping(value = "/modification")
     @ResponseBody
-    public ResponseEntity modifierDossierPatient(@RequestBody DossierMedical modification, @CookieValue String token){
+    public ResponseEntity modifierDossierPatient(@RequestBody DossierMedical modification){
 
-        //TODO NEED TO CHECK TOKEN
+
         ServiceModifierDossierPatient serviceModif = new ServiceModifierDossierPatient();
         Optional<DossierMedical> dossierModifier = serviceModif.modifierDossierMedical(modification);
         if(!dossierModifier.isPresent()){
@@ -27,11 +27,10 @@ public class ControleurModificationDossier {
     }
 
 
-    @DeleteMapping(value = "/modification")
+    @PutMapping(value = "/annulation")
     @ResponseBody
-    public ResponseEntity<DossierMedical> annulerDerniereModification(@RequestBody DossierMedical modification, @CookieValue String token){
+    public ResponseEntity<DossierMedical> annulerDerniereModification(@RequestBody DossierMedical modification){
 
-        //TODO NEED TO CHECK TOKEN
         ServiceModifierDossierPatient serviceModif = new ServiceModifierDossierPatient();
         Optional<DossierMedical> dossierRestaurer = serviceModif.annulerDerniereModification(modification);
         if(!dossierRestaurer.isPresent()){

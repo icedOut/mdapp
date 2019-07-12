@@ -81,7 +81,7 @@
 											"top": 39,
 											"width": 183,
 											"height": 13,
-											"text": "DossierMedicalProvider"
+											"text": "DAODossierMedical"
 										},
 										{
 											"_type": "LabelView",
@@ -2281,7 +2281,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFr4TAL0OAmhk8="
 					},
-					"name": "DossierMedicalProvider",
+					"name": "DAODossierMedical",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
@@ -3313,7 +3313,7 @@
 															"top": 47,
 															"width": 158.1162109375,
 															"height": 13,
-															"text": "DossierMedicalProvider"
+															"text": "DAODossierMedical"
 														},
 														{
 															"_type": "LabelView",
@@ -5989,7 +5989,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFr4g4q1x/5JmE="
 									},
-									"name": "DossierMedicalProvider",
+									"name": "DAODossierMedical",
 									"represent": {
 										"$ref": "AAAAAAFr4g6V6iAJcxI="
 									},
@@ -6089,8 +6089,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFr4g4q1h/4cmE="
 							},
-							"name": "Role1",
-							"type": ""
+							"name": "Role1"
 						},
 						{
 							"_type": "UMLAttribute",

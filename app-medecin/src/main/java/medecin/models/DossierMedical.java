@@ -19,6 +19,22 @@ public class DossierMedical {
   }
 
 
+  @Override
+  public String toString(){
+    String dossier = new StringBuilder()
+            .append("Nom du patient: " + this.patient.nom)
+            .append(System.lineSeparator())
+            .append("Prenom du patient: " + this.patient.prenom)
+            .append(System.lineSeparator())
+            .append("Nombre d'antecedent: " + this.antecedents.size())
+            .append(System.lineSeparator())
+            .append("Nombre de visite medicale: " + this.visites.size())
+            .append(System.lineSeparator())
+            .toString();
+    return dossier;
+  }
+
+
 
 
 

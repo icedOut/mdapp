@@ -23,9 +23,12 @@ public class ServiceAuthentification {
     public static ReponseAuthentification authentifier(DemandeAuthentification demande){
 
         Utilisateur user = DaoProvider.getUtilisateurDAO().getUtilisateur(demande.codeUsager);
+        if(user == null){
+            return new ReponseAuthentification(false);
+        }
         String fullPwd = Hasher.hashPassword(demande.motDePasse, user.salt);
 
-        if(!motDePasseValide(demande.motDePasse, fullPwd)){
+        if(!motDePasseValide(user.hash, fullPwd)){
             return new ReponseAuthentification(false);
         }
 

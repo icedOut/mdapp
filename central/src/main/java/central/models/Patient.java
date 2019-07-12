@@ -6,7 +6,7 @@ import com.j256.ormlite.table.DatabaseTable;
 import java.util.Date;
 
 
-public class Patient implements Utilisateur{
+public class Patient extends Utilisateur{
 
   public int id;
   public String nom;

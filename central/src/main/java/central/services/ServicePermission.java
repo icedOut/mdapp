@@ -17,7 +17,7 @@ public class ServicePermission {
     }
 
 
-    public static boolean verifierPermission(String codeUsager, TypePermission permission){
+    public static boolean verifierUsagerPossedePermission(String codeUsager, TypePermission permission){
         try{
             DTOUtilisateur user = DaoProvider.getUtilisateurDAO().queryForId(codeUsager);
             return permission == TypePermission.valueOf(user.typePermission);

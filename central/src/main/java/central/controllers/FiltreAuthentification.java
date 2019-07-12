@@ -25,8 +25,18 @@ public class FiltreAuthentification extends OncePerRequestFilter {
                                   HttpServletResponse response,
                                   FilterChain filterChain) throws ServletException, IOException {
 
+    String url = request.getRequestURL().toString();
+    if(request.getRequestURI().contains("authentification")){
+      filterChain.doFilter(request, response);
+      return;
+    }
 
     Cookie[] cookies = request.getCookies();
+    if(cookies == null || cookies.length == 0){
+      response.setStatus(400);
+      response.getWriter().write("Erreur d'authentification");
+      return;
+    }
     Optional<Cookie> tokenCookie = Arrays
             .stream(cookies)
             .filter(c -> c.getName().compareTo("ramq_token") == 0)

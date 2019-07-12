@@ -4,6 +4,7 @@ public class ReponseAuthentification {
 
   public boolean success;
   public String msgErr;
+  public String token;
 
   public ReponseAuthentification(boolean success){
     this.success = success;

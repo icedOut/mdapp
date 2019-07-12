@@ -29,12 +29,16 @@ public class FiltrePermission extends OncePerRequestFilter {
                        HttpServletResponse response,
                        FilterChain filterChain) throws IOException, ServletException {
 
-
+    String url = request.getRequestURL().toString();
+    if(url.contains("authentification")){
+      filterChain.doFilter(request, response);
+      return;
+    }
     Cookie[] cookies = request.getCookies();
     Optional<Cookie> tokenCookie = Arrays.stream(cookies).filter(c -> c.getName().compareTo("ramq_token") == 0).findAny();
     if(tokenCookie.isPresent()) {
 
-      Session session = ServiceGestionSession.getSession(tokenCookie.get().getValue());
+      Session session = ServiceGestionSession.obtenirSession(tokenCookie.get().getValue());
       if(session == null){
 
         response.setStatus(400);
@@ -42,7 +46,7 @@ public class FiltrePermission extends OncePerRequestFilter {
         return;
 
       }
-      boolean permissionAccepted = ServicePermission.verifierPermission(session.codeUsager, TypePermission.MODIFIER_DOSSIER);
+      boolean permissionAccepted = ServicePermission.verifierUsagerPossedePermission(session.codeUsager, TypePermission.MODIFIER_DOSSIER);
       if (permissionAccepted) {
         filterChain.doFilter(request, response);
         return;
@@ -52,8 +56,6 @@ public class FiltrePermission extends OncePerRequestFilter {
     response.setStatus(400);
     response.getWriter().write("Erreur d'authentification");
     return;
-
-
 
   }
 }
