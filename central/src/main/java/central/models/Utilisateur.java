@@ -1,6 +1,6 @@
 package central.models;
 
-public interface Utilisateur {
+public class Utilisateur {
 
   public String codeUsager = "";
   public String hash = "";

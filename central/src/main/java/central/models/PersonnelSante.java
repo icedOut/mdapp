@@ -1,5 +1,5 @@
 package central.models;
 
-public interface PersonnelSante extends Utilisateur{
+public class PersonnelSante extends Utilisateur{
   public int idPersonnel = 0;
 }

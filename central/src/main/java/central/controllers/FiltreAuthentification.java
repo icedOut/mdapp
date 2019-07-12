@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.Optional;
 
 @Component
-@Order(Ordered.HIGHEST_PRECEDENCE-1)
+@Order(Ordered.HIGHEST_PRECEDENCE)
 public class FiltreAuthentification extends OncePerRequestFilter {
 
 
@@ -25,11 +25,17 @@ public class FiltreAuthentification extends OncePerRequestFilter {
                                   HttpServletResponse response,
                                   FilterChain filterChain) throws ServletException, IOException {
 
+
     Cookie[] cookies = request.getCookies();
-    Optional<Cookie> tokenCookie = Arrays.stream(cookies).filter(c -> c.getName().compareTo("ramq_token") == 0).findAny();
+    Optional<Cookie> tokenCookie = Arrays
+            .stream(cookies)
+            .filter(c -> c.getName().compareTo("ramq_token") == 0)
+            .findAny();
+
     if (tokenCookie.isPresent()) {
 
-      boolean authentifier = ServiceGestionSession.verifierSessionActive(tokenCookie.get().getValue());
+      String token = tokenCookie.get().getValue();
+      boolean authentifier = ServiceGestionSession.verifierSessionActive(token);
       if (!authentifier) {
         response.setStatus(400);
         response.getWriter().write("Erreur d'authentification");

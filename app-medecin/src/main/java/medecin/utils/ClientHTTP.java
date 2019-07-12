@@ -85,6 +85,16 @@ public class ClientHTTP {
     return modification;
   }
 
+  public static String seConnecter(String codeUsager, String motDePasse){
+    // TODO
+    return "token";
+  }
+
+  public static void seConnecter(String token){
+    // TODO
+    return;
+  }
+
   private static String preparerModificationUrl(){
     if(client == null) connect();
     String port = Config.getConfig().getProperty("systeme_central.port");

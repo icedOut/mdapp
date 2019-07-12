@@ -19,7 +19,7 @@ import java.util.Arrays;
 import java.util.Optional;
 
 @Component
-@Order(Ordered.HIGHEST_PRECEDENCE)
+@Order(Ordered.LOWEST_PRECEDENCE)
 public class FiltrePermission extends OncePerRequestFilter {
 
 
@@ -38,7 +38,7 @@ public class FiltrePermission extends OncePerRequestFilter {
       if(session == null){
 
         response.setStatus(400);
-        response.getWriter().write("Erreur d'authentification");
+        response.getWriter().write("Vous n'avez pas les permissions");
         return;
 
       }

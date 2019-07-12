@@ -2,47 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c45a0f7-33aa-44e4-a5fa-95a3a571db69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../central/src/main/java/central/controllers/FiltreAuthentification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../central/src/main/java/central/controllers/FiltrePermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../central/src/main/java/central/utils/Hasher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../central/src/main/java/central/mapper/SessionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../central/src/main/java/central/mapper/UtilisateurMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medecin/utils/ClientHTTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medecin/utils/ClientHTTP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../central/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../central/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/myproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../central/myproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../central/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/controllers/ControleurAuthentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/controllers/ControleurAuthentification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/data/JDBCConnectionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/data/JDBCConnectionHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/data/SqLiteConnectionCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/data/SqLiteConnectionCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/data/SqLitePooledConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/data/SqLitePooledConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/data/SqLiteSingleConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/data/SqLiteSingleConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/dto/DTOSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/dto/DTOSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/dto/DTOUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/dto/DTOUtilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/mapper/CoordonneeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/mapper/CoordonneeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/models/ReponseAuthentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/models/ReponseAuthentification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/controllers/FiltreAuthentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/controllers/FiltreAuthentification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/controllers/FiltrePermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/controllers/FiltrePermission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/dao/DAOPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/dao/DAOPatient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/dao/DAOSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/dao/DAOSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/dao/DAOUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/dao/DAOUtilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/models/Medecin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/models/Medecin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/models/PersonnelSante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/models/PersonnelSante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/models/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/models/Utilisateur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/services/ServiceAuthentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/services/ServiceAuthentification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/services/ServiceGestionSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/services/ServiceGestionSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/services/ServicePermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/services/ServicePermission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/src/main/java/services/central/TelephoneMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../central/src/main/resources/ramq.db" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/resources/ramq.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../central/src/main/resources/ramq.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/resources/ramq.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/controllers/ControleurAuthentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/controllers/ControleurAuthentification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/data/SqLiteConnectionCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/data/SqLiteConnectionCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/data/SqLitePooledConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/data/SqLitePooledConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/data/SqLiteSingleConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/data/SqLiteSingleConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/dto/DTOSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/dto/DTOSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/dto/DTOUtilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/dto/DTOUtilisateur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/mapper/CoordonneeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/mapper/CoordonneeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/models/ReponseAuthentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/models/ReponseAuthentification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/services/ServiceAuthentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/services/ServiceAuthentification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/services/ServiceGestionSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/services/ServiceGestionSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/central/services/ServicePermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/central/services/ServicePermission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/ramq.db" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/ramq.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/ramq.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/ramq.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/reservation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/reservation/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/classes/services/central/TelephoneMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../central/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gof/facade.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/../gof/facade.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gof/factory_method.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/../gof/factory_method.mdj" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -156,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/medecin/utils/ClientHTTP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="249">
+              <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,10 +205,10 @@
         <option value="$PROJECT_DIR$/src/main/java/medecin/utils/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/medecin/models/AdresseResidentielle.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/medecin/utils/ClientHTTP.java" />
         <option value="$PROJECT_DIR$/src/main/java/medecin/services/GestionnaireDossierActif.java" />
         <option value="$PROJECT_DIR$/src/main/java/medecin/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/medecin/domaine/GestionnaireDossierActif.java" />
+        <option value="$PROJECT_DIR$/src/main/java/medecin/utils/ClientHTTP.java" />
       </list>
     </option>
   </component>
@@ -726,8 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/medecin/utils/ClientHTTP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="249">
+          <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,4 +1,5 @@
 package central.models;
 
-public class Medecin implements PersonnelSante {
+public class Medecin extends PersonnelSante {
+  public EtablissementSante lieuTravail;
 }

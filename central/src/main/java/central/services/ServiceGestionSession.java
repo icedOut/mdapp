@@ -2,6 +2,7 @@ package central.services;
 
 import central.data.DaoProvider;
 import central.dto.DTOSession;
+import central.mapper.SessionMapper;
 import central.models.Session;
 import com.j256.ormlite.dao.Dao;
 
@@ -23,79 +24,29 @@ public class ServiceGestionSession {
 
 
     public static String creerSession(String codeUsager){
-        DTOSession session = new DTOSession();
-        session.codeUsager = codeUsager;
-        session.token = UUID.randomUUID().toString();
-        session.expiration = dateFormater.format(getSessionExpiration());
-
-        try{
-            DaoProvider.getSessionDAO().create(session);
-        }
-        catch(SQLException sqle){
-            System.out.println(sqle.getCause());
-            return null;
-        }
-
-
-        return session.token;
+        String token = UUID.randomUUID().toString();
+        Session session = DaoProvider.getSessionDAO().creerSession(token, codeUsager);
+        if(session == null) return null;
+        return token;
     }
 
 
     public static boolean verifierSessionActive(String token){
-        try{
-            List<DTOSession> sessions = DaoProvider.getSessionDAO().queryForEq("token", token);
-            if(sessions.size() <= 0) return false;
 
-            Date expiration = dateFormater.parse(sessions.get(0).expiration);
-            Date now = new Date();
+        Session session = DaoProvider.getSessionDAO().obtenirSession(token);
+        if(session == null) return false;
+        Date now = new Date();
+        return session.tempsFin.after(now);
 
-            return expiration.after(now);
-        }
-        catch(SQLException sqle){
-            System.out.println(sqle.getCause());
-            return false;
-        }
-        catch(ParseException pe){
-            System.out.println(pe.getErrorOffset());
-            return false;
-        }
     }
 
     public static void fermerSession(String token){
-        try{
-            if(verifierSessionActive(token)){
-                DTOSession session = DaoProvider.getSessionDAO().queryForEq("token", token).get(0);
-                session.expiration = dateFormater.format(new Date());
-                DaoProvider.getSessionDAO().update(session);
-            }
-        }
-        catch(SQLException sqle){
-            System.out.println(sqle.getCause());
-        }
-    }
-
-    public static Session getSession(String token){
-        try{
-            DTOSession dto = DaoProvider.getSessionDAO().queryForEq("token", token).get(0);
-            Session session = new Session();
-            session.codeUsager = dto.codeUsager;
-            session.tempsFin = dateFormater.parse(dto.expiration);
-            session.token = dto.token;
-            return session;
-        }
-        catch(Exception e){
-            System.out.println(e.getCause());
-            return null;
-        }
+        if(!verifierSessionActive(token)) return;
+        DaoProvider.getSessionDAO().terminerSession(token);
     }
 
 
-    private static Date getSessionExpiration(){
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new Date());
-        calendar.add(Calendar.HOUR_OF_DAY, 1);
-        return calendar.getTime();
-    }
+
 
 
 }
