@@ -1,8 +1,5 @@
 package medecin.ui;
 
-import com.sun.tools.javac.comp.Flow;
-import medecin.controlleur.ControlleurConnexion;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
