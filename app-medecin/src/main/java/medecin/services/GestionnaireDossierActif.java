@@ -30,19 +30,23 @@ public class GestionnaireDossierActif {
   public static DossierMedical ajouterAntecedent(AntecedentMedical antecedent){
 
     dossierActif.antecedents.add(antecedent);
+    enregistrerModification(dossierActif);
     return dossierActif;
   }
 
   public static DossierMedical ajouterVisite(VisiteMedicale visite){
 
     dossierActif.visites.add(visite);
+    enregistrerModification(dossierActif);
     return dossierActif;
   }
 
 
   public static DossierMedical enregistrerModification(DossierMedical modification){
     modificationEnCours = modification;
-    if(System.currentTimeMillis() + 5000 > lastModificationTime){
+    if(System.currentTimeMillis() + 3000 > lastModificationTime){
+      //lastModificationTime = System.currentTimeMillis();
+      System.out.println("will save to db");
       String token = GestionnaireSession.getToken();
       DossierMedical nouvelEtat = ClientHTTP.envoyerModification(modificationEnCours, token);
       if(nouvelEtat != null){

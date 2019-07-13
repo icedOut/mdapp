@@ -1,6 +1,7 @@
 package medecin.utils;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import medecin.models.DemandeAuthentification;
 import medecin.models.DossierMedical;
 import medecin.models.ReponseAuthentification;
@@ -16,7 +17,7 @@ public class ClientHTTP {
 
 
   private static HttpClient client = null;
-  private static Gson g = new Gson();
+  private static Gson g = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ssX").create();
 
   private ClientHTTP(){
 
@@ -66,11 +67,13 @@ public class ClientHTTP {
   public static DossierMedical envoyerModification(DossierMedical modification, String token) {
     try{
       String url = "http://localhost:23000/modification";
+      String body = g.toJson(modification);
+      System.out.println(body);
       HttpRequest request = HttpRequest.newBuilder()
               .uri(URI.create(url))
               .header("Content-Type", "application/json")
               .setHeader("Cookie", "ramq_token="+token)
-              .PUT(HttpRequest.BodyPublishers.ofString(g.toJson(modification)))
+              .PUT(HttpRequest.BodyPublishers.ofString(body))
               .build();
       HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
       if(response.statusCode() != 200) return null;

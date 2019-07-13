@@ -1,5 +1,7 @@
 package medecin.ui;
 
+import medecin.controlleur.ControlleurConnexion;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

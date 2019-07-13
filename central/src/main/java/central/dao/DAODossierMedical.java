@@ -2,12 +2,10 @@ package central.dao;
 
 
 import central.data.DaoProvider;
-import central.dto.DTOAntecedentMedical;
-import central.dto.DTODossierMedical;
-import central.dto.DTOPatient;
-import central.dto.DTOVisiteMedicale;
+import central.dto.*;
 import central.mapper.AntecedentMapper;
 import central.mapper.DossierMedicalMapper;
+import central.mapper.EtablisementMapper;
 import central.mapper.VisiteMedicaleMapper;
 import central.models.DossierMedical;
 import com.j256.ormlite.dao.BaseDaoImpl;
@@ -70,7 +68,6 @@ public class DAODossierMedical extends BaseDaoImpl<DTODossierMedical, String> {
       DaoProvider.getDossierDAO().create(dtoDossier);
       List<DTOAntecedentMedical> dtoAntecedents = AntecedentMapper.getAntecedentsDtosFromDossier(modification, dtoDossier.id);
       List<DTOVisiteMedicale> dtoVisites = VisiteMedicaleMapper.getVisitesDtoFromDossier(modification, dtoDossier.id);
-
 
       addAntecedentsToDatabase(dtoAntecedents);
       addVisitesToDatabase(dtoVisites);
@@ -151,6 +148,13 @@ public class DAODossierMedical extends BaseDaoImpl<DTODossierMedical, String> {
 
 
       DossierMedical dossier = DossierMedicalMapper.dtoToDossier(dbDossier, dbVisites, dbAntecedents, dbPatient);
+      for(int i = 0; i < dossier.visites.size(); ++i){
+        DTOEtablissementSante etablissement = DaoProvider
+                .getEtablissementDAO()
+                .queryForId(String.valueOf(dossier.visites.get(i).etablissement.id));
+        dossier.visites.get(i).etablissement.nom = etablissement.nom;
+      }
+
       return Optional.of(dossier);
     }
     catch(SQLException e){

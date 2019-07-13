@@ -6,6 +6,7 @@ import central.dto.DTOVisiteMedicale;
 import central.models.DossierMedical;
 import central.models.VisiteMedicale;
 import central.services.EtablissementProvider;
+import central.utils.DateFormatter;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.stream.Collectors;
 
 public class VisiteMedicaleMapper {
 
-  static SimpleDateFormat dateFormater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
 
   public static List<VisiteMedicale> getVisitesFromDtos(List<DTOVisiteMedicale> dbVisites) {
     return dbVisites.stream().map(v -> getVisiteFromDto(v)).collect(Collectors.toList());
@@ -30,10 +31,8 @@ public class VisiteMedicaleMapper {
     visite.traitement.medicament = dbVisite.medicament;
     try {
 
-      visite.dateVisite = dateFormater.parse(dbVisite.dateVisite);
-      DTOEtablissementSante etab = EtablisementMapper.mapToDto(visite.etablissement);
-      visite.etablissement.id = etab.id;
-      visite.etablissement.nom = etab.nom;
+      visite.dateVisite = DateFormatter.stringToDate(dbVisite.dateVisite);
+      visite.etablissement.id = dbVisite.idEtablissement;
     } catch (Exception e) {
       System.out.println(e.toString());
     }
@@ -45,7 +44,7 @@ public class VisiteMedicaleMapper {
   public static List<DTOVisiteMedicale> getVisitesDtoFromDossier(DossierMedical modif, int newId) {
     return modif.visites.stream().map(v -> {
       DTOVisiteMedicale dtoVisite = new DTOVisiteMedicale();
-      dtoVisite.dateVisite = dateFormater.format(v.dateVisite);
+      dtoVisite.dateVisite = DateFormatter.dateToString(v.dateVisite);
       dtoVisite.idDossier = newId;
       dtoVisite.diagnostic = v.diagnostic;
       dtoVisite.notes = v.notes;

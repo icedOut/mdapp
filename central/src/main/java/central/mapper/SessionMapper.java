@@ -3,13 +3,12 @@ package central.mapper;
 import central.dto.DTOSession;
 import central.models.Session;
 import central.services.ServiceGestionSession;
+import central.utils.DateFormatter;
 
 import java.text.SimpleDateFormat;
 
 public class SessionMapper {
 
-
-  static SimpleDateFormat dateFormater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 
 
@@ -18,7 +17,7 @@ public class SessionMapper {
       Session session = new Session();
       session.token = dto.token;
       session.codeUsager = dto.codeUsager;
-      session.tempsFin = dateFormater.parse(dto.expiration);
+      session.tempsFin = DateFormatter.stringToDate(dto.expiration);
       return session;
     }
     catch(Exception e){

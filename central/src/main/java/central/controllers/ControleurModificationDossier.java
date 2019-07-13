@@ -2,10 +2,12 @@ package central.controllers;
 
 import central.models.DossierMedical;
 import central.services.ServiceModifierDossierPatient;
+import org.springframework.http.HttpRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Optional;
 
 @Controller

@@ -9,6 +9,7 @@ central/models/TypePermission.class
 central/models/UtilisateurRAMQ.class
 reservation/Main.class
 central/dto/DTOVisiteMedicale.class
+central/utils/DateFormatter.class
 central/models/Utilisateur.class
 central/data/ConnectionType.class
 central/models/DossierMedical.class

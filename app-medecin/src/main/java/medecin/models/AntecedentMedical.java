@@ -1,6 +1,9 @@
 package medecin.models;
 
 
+import medecin.utils.DateFormatter;
+
+import javax.print.DocFlavor;
 import java.util.Date;
 
 public class AntecedentMedical {
@@ -12,7 +15,18 @@ public class AntecedentMedical {
   public Traitement traitement;
 
   public AntecedentMedical(){
+    this.debutMaladie = new Date();
+    this.diagnostic = "";
     this.traitement = new Traitement();
   }
 
+
+
+  public String toString() {
+    return new StringBuilder()
+            .append(DateFormatter.dateToString(this.debutMaladie))
+            .append(" : ")
+            .append(this.diagnostic)
+            .toString();
+  }
 }

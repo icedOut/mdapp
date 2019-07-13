@@ -8,8 +8,11 @@ import central.mapper.DossierMedicalMapper;
 import central.models.Genre;
 import central.models.Parent;
 import central.models.Patient;
+import central.utils.DateFormatter;
 
 public class PatientMapper {
+
+
   public static Patient getPatientFromDto(DTOPatient dtoPatient) {
     Patient patient = new Patient();
     patient.codeRAMQ = dtoPatient.codeRAMQ;
@@ -22,7 +25,7 @@ public class PatientMapper {
     patient.parent1 = new Parent(dtoPatient.nomParent1, dtoPatient.prenomParent1);
     patient.parent2 = new Parent(dtoPatient.nomParent2, dtoPatient.prenomParent2);
     try {
-      patient.dateNaissance = DossierMedicalMapper.dateFormater.parse(dtoPatient.dateNaissance);
+      patient.dateNaissance = DateFormatter.stringToDate(dtoPatient.dateNaissance);
 
     } catch (Exception e) {
 

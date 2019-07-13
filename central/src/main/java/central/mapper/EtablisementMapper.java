@@ -1,7 +1,14 @@
 package central.mapper;
 
 import central.dto.DTOEtablissementSante;
+import central.dto.DTOVisiteMedicale;
+import central.models.AntecedentMedical;
 import central.models.EtablissementSante;
+import central.models.VisiteMedicale;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class EtablisementMapper {
 
@@ -19,4 +26,17 @@ public class EtablisementMapper {
     dto.nom = etablissement.nom;
     return dto;
   }
+
+
+  public static List<DTOEtablissementSante> getAllEtablissementDTOFromVisites(List<VisiteMedicale> visites){
+    return visites.stream().map(v -> {
+      DTOEtablissementSante e = new DTOEtablissementSante();
+      e.nom = v.etablissement.nom;
+      return e;
+    }).collect(Collectors.toCollection(ArrayList::new));
+  }
+
+
+
+
 }

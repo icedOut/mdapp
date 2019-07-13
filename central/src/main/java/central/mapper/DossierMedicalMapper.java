@@ -2,6 +2,7 @@ package central.mapper;
 
 import central.dto.*;
 import central.models.*;
+import central.utils.DateFormatter;
 
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
@@ -11,7 +12,7 @@ import java.util.List;
 public class DossierMedicalMapper {
 
 
-  static SimpleDateFormat dateFormater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
 
   public static DossierMedical dtoToDossier(DTODossierMedical dossier,
                                             List<DTOVisiteMedicale> visites,
@@ -29,7 +30,7 @@ public class DossierMedicalMapper {
     DTODossierMedical dtoDossier = new DTODossierMedical();
     dtoDossier.etatPrecedent = modif.id;
     dtoDossier.idPatient = idPatient;
-    dtoDossier.dateModif = dateFormater.format(new Date());
+    dtoDossier.dateModif = DateFormatter.dateToString(new Date());
     dtoDossier.id = modif.id;
     return dtoDossier;
   }

@@ -1,29 +1,33 @@
 package medecin.bui;
 
+import medecin.controlleur.ControlleurConnexion;
+
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JButton;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class FenetreConnexion extends JPanel {
-	private JTextField textField;
-	private JTextField textField_1;
-
+public class FenetreConnexion extends JPanel implements ActionListener {
+	private JTextField username;
+	private JTextField password;
+	private JLabel errorMsg = new JLabel("");
 	/**
 	 * Create the panel.
 	 */
 	public FenetreConnexion() {
 		setLayout(null);
 		
-		textField = new JTextField();
-		textField.setBounds(0, 28, 281, 26);
-		add(textField);
-		textField.setColumns(10);
+		username = new JTextField();
+		username.setBounds(0, 28, 281, 26);
+		add(username);
+		username.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(0, 94, 281, 26);
-		add(textField_1);
-		textField_1.setColumns(10);
+		password = new JTextField();
+		password.setBounds(0, 94, 281, 26);
+		add(password);
+		password.setColumns(10);
 		
 		JLabel lblMotDePasse = new JLabel("Mot de passe");
 		lblMotDePasse.setBounds(6, 66, 125, 16);
@@ -34,12 +38,36 @@ public class FenetreConnexion extends JPanel {
 		add(lblNomDutilisateur);
 		
 		JButton btnSeConnecter = new JButton("Se connecter");
-		btnSeConnecter.setBounds(59, 132, 185, 16);
+		btnSeConnecter.setBounds(59, 120, 185, 16);
+		btnSeConnecter.addActionListener(this);
 		add(btnSeConnecter);
 		
-		JLabel label = new JLabel("");
-		label.setBounds(119, 160, 61, 16);
-		add(label);
 
+		errorMsg.setBounds(56, 140, 300, 16);
+		add(errorMsg);
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		boolean connectionSuccess = ControlleurConnexion.connexion(username.getText(), password.getText());
+		System.out.println(connectionSuccess);
+		if(connectionSuccess){
+			this.errorMsg.setText("");
+			this.firePropertyChange("connect", false, true);
+		}
+		else{
+			this.errorMsg.setText("Le mot de passe est invalide!");
+		}
+	}
+
+
+
+	public void effaceUsername(){
+		this.username.setText("");
+	}
+
+	public void effacePassword(){
+		this.password.setText("");
 	}
 }

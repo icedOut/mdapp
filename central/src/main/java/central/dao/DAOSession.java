@@ -6,6 +6,7 @@ import central.data.DaoProvider;
 import central.dto.DTOSession;
 import central.mapper.SessionMapper;
 import central.models.Session;
+import central.utils.DateFormatter;
 import com.j256.ormlite.dao.BaseDaoImpl;
 import com.j256.ormlite.support.ConnectionSource;
 
@@ -19,7 +20,7 @@ import java.util.List;
 public class DAOSession extends BaseDaoImpl<DTOSession, String> {
 
 
-  static SimpleDateFormat dateFormater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
 
   public DAOSession(ConnectionSource connectionSource) throws SQLException {
     super(connectionSource, DTOSession.class);
@@ -31,7 +32,7 @@ public class DAOSession extends BaseDaoImpl<DTOSession, String> {
       DTOSession session = new DTOSession();
       session.codeUsager = codeUsager;
       session.token = token;
-      session.expiration = dateFormater.format(getSessionExpirationTime());
+      session.expiration = DateFormatter.dateToString(getSessionExpirationTime());
       this.create(session);
       return SessionMapper.mapFromDto(session);
 
@@ -60,7 +61,7 @@ public class DAOSession extends BaseDaoImpl<DTOSession, String> {
   public void terminerSession(String token){
     try{
       DTOSession session = this.queryForEq("token", token).get(0);
-      session.expiration = dateFormater.format(new Date());
+      session.expiration = DateFormatter.dateToString(new Date());
       DaoProvider.getSessionDAO().update(session);
     }
     catch(SQLException sqle){

@@ -1,4 +1,4 @@
-package medecin.ui;
+package medecin.controlleur;
 
 import medecin.services.GestionnaireAuthentification;
 
