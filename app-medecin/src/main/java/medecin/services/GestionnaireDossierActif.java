@@ -4,6 +4,7 @@ import medecin.models.AntecedentMedical;
 import medecin.models.DossierMedical;
 import medecin.models.VisiteMedicale;
 import medecin.utils.ClientHTTP;
+import medecin.utils.Config;
 
 
 public class GestionnaireDossierActif {
@@ -11,6 +12,10 @@ public class GestionnaireDossierActif {
 
   private static DossierMedical dossierActif;
   private static DossierMedical modificationEnCours;
+
+  private static VisiteMedicale visitePrototype = new VisiteMedicale(
+          Config.getConfig().getProperty("nom_etablissement"),
+          Integer.parseInt(Config.getConfig().getProperty("id_etablissement")));
 
   private static long lastModificationTime = 0;
 
@@ -27,15 +32,17 @@ public class GestionnaireDossierActif {
   }
 
 
-  public static DossierMedical ajouterAntecedent(AntecedentMedical antecedent){
+  public static DossierMedical ajouterAntecedent(){
 
+    AntecedentMedical antecedent = new AntecedentMedical();
     dossierActif.antecedents.add(antecedent);
     enregistrerModification(dossierActif);
     return dossierActif;
   }
 
-  public static DossierMedical ajouterVisite(VisiteMedicale visite){
+  public static DossierMedical ajouterVisite(){
 
+    VisiteMedicale visite = visitePrototype.clone();
     dossierActif.visites.add(visite);
     enregistrerModification(dossierActif);
     return dossierActif;
@@ -46,7 +53,6 @@ public class GestionnaireDossierActif {
     modificationEnCours = modification;
     if(System.currentTimeMillis() + 3000 > lastModificationTime){
       //lastModificationTime = System.currentTimeMillis();
-      System.out.println("will save to db");
       String token = GestionnaireSession.getToken();
       DossierMedical nouvelEtat = ClientHTTP.envoyerModification(modificationEnCours, token);
       if(nouvelEtat != null){

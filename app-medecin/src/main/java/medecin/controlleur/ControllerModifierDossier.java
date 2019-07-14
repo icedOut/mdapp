@@ -9,13 +9,13 @@ public class ControllerModifierDossier {
 
 
 
-  public static DossierMedical ajouterVisite(VisiteMedicale visite){
-    DossierMedical dossierModifie = GestionnaireDossierActif.ajouterVisite(visite);
+  public static DossierMedical ajouterVisite(){
+    DossierMedical dossierModifie = GestionnaireDossierActif.ajouterVisite();
     return dossierModifie;
   }
 
-  public static DossierMedical ajouterAntecedent(AntecedentMedical antecedent){
-    DossierMedical dossierModifie = GestionnaireDossierActif.ajouterAntecedent(antecedent);
+  public static DossierMedical ajouterAntecedent(){
+    DossierMedical dossierModifie = GestionnaireDossierActif.ajouterAntecedent();
     return dossierModifie;
   }
 

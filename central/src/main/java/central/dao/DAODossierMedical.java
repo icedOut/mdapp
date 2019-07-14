@@ -36,12 +36,7 @@ public class DAODossierMedical extends BaseDaoImpl<DTODossierMedical, String> {
               .getPatientDAO()
               .queryForAll()
               .stream()
-              .filter(d -> {
-                System.out.println(code);
-                System.out.println(d.codeRAMQ);
-                System.out.println(code.compareTo(d.codeRAMQ));
-                return d.codeRAMQ.compareTo(code) == 0;
-              })
+              .filter(d -> d.codeRAMQ.compareTo(code) == 0)
               .findFirst();
 
       return prepareDossier(dtoPatient.get().etatDossier);

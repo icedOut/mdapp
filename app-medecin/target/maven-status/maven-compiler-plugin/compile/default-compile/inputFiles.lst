@@ -19,6 +19,7 @@
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/FenetrePrincipale.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/controlleur/ControlleurChargerDossier.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/Medecin.java
+/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/VisitePrototype.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/UtilisateurRAMQ.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/TypeTelephone.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/ui/FenetreCoordonnee.java

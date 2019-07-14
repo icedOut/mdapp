@@ -10,9 +10,8 @@ public class EtablissementSante {
   public int id;
   public String nom;
 
-  public EtablissementSante(){
-    this.nom = Config.getConfig().getProperty("nom_etablissement");
+  public EtablissementSante(String nom, int id){
     this.id = 2;
-    System.out.println(this.nom);
+    this.nom = nom;
   }
 }

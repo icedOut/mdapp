@@ -58,7 +58,7 @@
     <orderEntry type="library" name="Maven: org.xerial:sqlite-jdbc:3.28.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:npm:5.0.0-2" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.npm:sha:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars.npm:graceful-fs:4.1.15" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars.npm:graceful-fs:4.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.npm:create-hash:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.npm:sha.js:2.4.10" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.npm:safe-buffer:5.2.0" level="project" />

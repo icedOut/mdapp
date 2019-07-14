@@ -4,19 +4,12 @@ import medecin.utils.DateFormatter;
 
 import java.util.Date;
 
-public class VisiteMedicale {
+public class VisiteMedicale implements VisitePrototype{
 
 
 
 
-  public VisiteMedicale(){
-    this.notes = "";
-    this.resume = "";
-    this.diagnostic = "";
-    this.traitement = new Traitement();
-    this.etablissement = new EtablissementSante();
-    this.dateVisite = new Date();
-  }
+
 
   public int id;
   public Date dateVisite;
@@ -27,7 +20,14 @@ public class VisiteMedicale {
   public EtablissementSante etablissement;
 
 
-
+  public VisiteMedicale(String nomEtablissement, int idOfEtablissement){
+    this.notes = "";
+    this.resume = "";
+    this.diagnostic = "";
+    this.traitement = new Traitement();
+    this.etablissement = new EtablissementSante(nomEtablissement, idOfEtablissement);
+    this.dateVisite = new Date();
+  }
 
   @Override
   public String toString(){
@@ -38,4 +38,8 @@ public class VisiteMedicale {
             .toString();
   }
 
+  @Override
+  public VisiteMedicale clone() {
+    return new VisiteMedicale(this.etablissement.nom, this.etablissement.id);
+  }
 }

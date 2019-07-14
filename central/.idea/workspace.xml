@@ -2,97 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c45a0f7-33aa-44e4-a5fa-95a3a571db69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/bui/FenetreDeconnexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/utils/DateFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/central/utils/DateFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/models/VisitePrototype.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/myproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/myproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/bui/FenetreConnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/bui/FenetreConnexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/bui/FenetreCoordonnee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/bui/FenetreCoordonnee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/bui/FenetreDossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/bui/FenetreDossier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/bui/FenetrePrincipale.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/FenetrePrincipale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/models/AntecedentMedical.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/models/AntecedentMedical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/controlleur/ControllerModifierDossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/controlleur/ControllerModifierDossier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/models/EtablissementSante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/models/EtablissementSante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/models/Traitement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/models/Traitement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/models/VisiteMedicale.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/models/VisiteMedicale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/services/GestionnaireDossierActif.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/services/GestionnaireDossierActif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/ControlleurConnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/controlleur/ControlleurConnexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreConnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreConnexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/utils/ClientHTTP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/utils/ClientHTTP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/controlleur/ControlleurChargerDossier.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/controlleur/ControlleurChargerDossier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/controlleur/ControlleurConnexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/controlleur/ControlleurConnexion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/AdresseResidentielle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/AdresseResidentielle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/AntecedentMedical.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/AntecedentMedical.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Coordonnee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Coordonnee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/DemandeAnnulationModification.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/DemandeAnnulationModification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/DemandeAuthentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/DemandeAuthentification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/DossierMedical.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/DossierMedical.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/EtablissementSante.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/EtablissementSante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Genre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Medecin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Medecin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/ModificationDossier.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/ModificationDossier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/NumeroTelephone.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/NumeroTelephone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Parent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Parent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Patient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/PersonnelSante.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/PersonnelSante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/ProfessionelSante.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/ProfessionelSante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/ReponseAuthentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/ReponseAuthentification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Session.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Traitement.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Traitement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/TypePermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/TypePermission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/TypeTelephone.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/TypeTelephone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Utilisateur.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/Utilisateur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/UtilisateurRAMQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/UtilisateurRAMQ.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/VisiteMedicale.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/models/VisiteMedicale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/services/GestionnaireAuthentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/services/GestionnaireAuthentification.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/services/GestionnaireDossierActif.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/services/GestionnaireDossierActif.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/services/GestionnaireSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/services/GestionnaireSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreConnexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreConnexion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreCoordonnee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreCoordonnee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreDeconnexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreDeconnexion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreDossierMedical.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreDossierMedical.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeAntecedent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeAntecedent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeVisites.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeVisites.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetrePrincipale.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetrePrincipale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/utils/ClientHTTP.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/utils/ClientHTTP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/utils/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/utils/Config.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/target/medecin-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/medecin-0.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/central/controllers/ControleurModificationDossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/controllers/ControleurModificationDossier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/central/dao/DAODossierMedical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/dao/DAODossierMedical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/central/dao/DAOSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/dao/DAOSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/central/mapper/AntecedentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/mapper/AntecedentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/central/mapper/DossierMedicalMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/mapper/DossierMedicalMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/central/mapper/EtablisementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/mapper/EtablisementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/central/mapper/PatientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/mapper/PatientMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/central/mapper/SessionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/mapper/SessionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/central/mapper/VisiteMedicaleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/mapper/VisiteMedicaleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/central/models/AntecedentMedical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/models/AntecedentMedical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/central/models/VisiteMedicale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/central/models/VisiteMedicale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ramq.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ramq.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ramq.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ramq.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/central/controllers/ControleurModificationDossier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/controllers/ControleurModificationDossier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/central/dao/DAODossierMedical.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/dao/DAODossierMedical.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/central/dao/DAOSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/dao/DAOSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/central/mapper/AntecedentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/mapper/AntecedentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/central/mapper/DossierMedicalMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/mapper/DossierMedicalMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/central/mapper/EtablisementMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/mapper/EtablisementMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/central/mapper/PatientMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/mapper/PatientMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/central/mapper/SessionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/mapper/SessionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/central/mapper/VisiteMedicaleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/mapper/VisiteMedicaleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/central/models/AntecedentMedical.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/models/AntecedentMedical.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/central/models/VisiteMedicale.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/central/models/VisiteMedicale.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ramq.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ramq.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ramq.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ramq.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/central/mapper/DossierMedicalMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
+            <state relative-caret-position="375">
               <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -134,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/central/models/VisiteMedicale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="105">
               <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -146,17 +77,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/central/controllers/ControleurModificationDossier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
+            <state relative-caret-position="210">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/central/dao/DAODossierMedical.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="69" column="118" selection-start-line="69" selection-start-column="118" selection-end-line="69" selection-end-column="118" />
+            <state relative-caret-position="15">
+              <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -164,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/central/mapper/EtablisementMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="330">
               <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="77" />
             </state>
           </provider>
@@ -173,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/ramq.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="926">
+            <state relative-caret-position="1590">
               <caret line="106" column="160" selection-start-line="106" selection-start-column="160" selection-end-line="106" selection-end-column="160" />
             </state>
           </provider>
@@ -182,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/central/utils/DateFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
+            <state relative-caret-position="165">
               <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -193,10 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/central/mapper/AntecedentMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="465">
               <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
             </state>
           </provider>
@@ -205,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/central/services/ServiceModifierDossierPatient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="210">
               <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -279,15 +210,15 @@
         <option value="$PROJECT_DIR$/src/main/java/central/models/AntecedentMedical.java" />
         <option value="$PROJECT_DIR$/src/main/java/central/mapper/VisiteMedicaleMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/central/mapper/EtablisementMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/central/dao/DAODossierMedical.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ramq.sql" />
         <option value="$PROJECT_DIR$/src/main/java/central/mapper/AntecedentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/central/dao/DAODossierMedical.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="32" />
-    <option name="y" value="23" />
+    <option name="x" value="46" />
+    <option name="y" value="27" />
     <option name="width" value="1584" />
     <option name="height" value="975" />
   </component>
@@ -510,10 +441,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="23" width="1584" height="975" extended-state="0" />
+    <frame x="46" y="27" width="1584" height="975" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.25162128" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.2548638" />
       <window_info id="Structure" order="1" sideWeight="0.5009862" side_tool="true" weight="0.2569956" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -591,16 +522,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/filters/FiltreConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/filters/FiltreConfig.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -660,26 +582,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/services/DossierMedicalProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="37" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/services/DossierMedicalUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="68" column="14" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="68" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/services/DossierMedicalProvider.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/services/DossierMedicalUpdater.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/central/models/Traitement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -926,18 +830,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/central/mapper/DossierMedicalMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
+        <state relative-caret-position="375">
           <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/models/VisiteMedicale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -951,47 +845,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/controllers/ControleurModificationDossier.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/models/VisiteMedicale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/services/ServiceModifierDossierPatient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+        <state relative-caret-position="105">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/mapper/EtablisementMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/controllers/ControleurModificationDossier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="77" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/central/dao/DAODossierMedical.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/mapper/EtablisementMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="69" column="118" selection-start-line="69" selection-start-column="118" selection-end-line="69" selection-end-column="118" />
+        <state relative-caret-position="330">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ramq.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="926">
+        <state relative-caret-position="1590">
           <caret line="106" column="160" selection-start-line="106" selection-start-column="160" selection-end-line="106" selection-end-column="160" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/central/utils/DateFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="165">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1003,8 +890,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/central/mapper/AntecedentMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="465">
           <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/services/ServiceModifierDossierPatient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/central/dao/DAODossierMedical.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
         </state>
       </provider>
     </entry>

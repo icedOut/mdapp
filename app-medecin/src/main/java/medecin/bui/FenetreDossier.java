@@ -5,6 +5,8 @@ import medecin.controlleur.ControlleurChargerDossier;
 import medecin.models.AntecedentMedical;
 import medecin.models.DossierMedical;
 import medecin.models.VisiteMedicale;
+import medecin.models.VisitePrototype;
+import medecin.utils.Config;
 import medecin.utils.DateFormatter;
 
 import javax.swing.JPanel;
@@ -50,6 +52,9 @@ public class FenetreDossier extends JPanel {
 
 	private int currentVisiteIdx = 0;
 	private int currentAntecedetIdx = 0;
+
+
+
 
 	/**
 	 * Create the panel.
@@ -307,8 +312,8 @@ public class FenetreDossier extends JPanel {
 		addVisite.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				VisiteMedicale v = new VisiteMedicale();
-				dossierActif = ControllerModifierDossier.ajouterVisite(v);
+
+				dossierActif = ControllerModifierDossier.ajouterVisite();
 				afficherDossier();
 			}
 		});
@@ -452,8 +457,7 @@ public class FenetreDossier extends JPanel {
 		addAntecedent.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				AntecedentMedical a = new AntecedentMedical();
-				dossierActif = ControllerModifierDossier.ajouterAntecedent(a);
+				dossierActif = ControllerModifierDossier.ajouterAntecedent();
 				afficherDossier();
 			}
 		});

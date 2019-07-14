@@ -34,6 +34,7 @@ medecin/controlleur/ControlleurChargerDossier.class
 medecin/models/DemandeAuthentification.class
 medecin/models/Coordonnee.class
 medecin/bui/FenetreConnexion.class
+medecin/models/VisitePrototype.class
 medecin/bui/FenetreDossier$10.class
 medecin/utils/Config.class
 medecin/Main.class
