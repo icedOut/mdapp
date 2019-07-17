@@ -25,8 +25,7 @@ public class AntecedentMapper {
     ante.traitement.nomTraitement = dbAntecedent.nomTraitement;
     try {
       ante.debutMaladie = DateFormatter.stringToDate(dbAntecedent.debutMaladie);
-      ante.debutMaladie = DateFormatter.stringToDate(dbAntecedent.debutMaladie);
-      ante.finMaladie = DateFormatter.stringToDate(dbAntecedent.finMaladie);
+      ante.finMaladie = dbAntecedent.finMaladie == null ? null : DateFormatter.stringToDate(dbAntecedent.finMaladie);
     } catch (Exception e) {
       System.out.println(e.toString());
     }
