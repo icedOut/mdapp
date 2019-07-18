@@ -1,18 +1,20 @@
 package medecin.ui;
 
 import javax.swing.*;
-import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class FenetreDeconnexion extends JPanel {
+public class FenetreDeconnexion extends JPanel implements ActionListener {
 
-  public JButton submit;
-
-  public FenetreDeconnexion (){
-    super();
-    submit = new JButton();
-    submit.setText("Se déconnecter");
-    submit.setBounds(0, 10, 200, 25);
-    this.add(submit);
+  public FenetreDeconnexion(){
+    JButton btnSeConnecter = new JButton("Se déconnecter");
+    btnSeConnecter.setBounds(59, 120, 185, 16);
+    btnSeConnecter.addActionListener(this);
+    add(btnSeConnecter);
   }
 
+  @Override
+  public void actionPerformed(ActionEvent e) {
+    this.firePropertyChange("disconnect", false, true);
+  }
 }

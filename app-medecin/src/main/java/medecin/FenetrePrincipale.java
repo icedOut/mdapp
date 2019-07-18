@@ -1,9 +1,6 @@
 package medecin;
 
-import medecin.bui.FenetreConnexion;
-import medecin.bui.FenetreDeconnexion;
-import medecin.bui.FenetreDossier;
-
+import medecin.ui.*;
 import java.awt.EventQueue;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -16,7 +13,7 @@ public class FenetrePrincipale implements PropertyChangeListener {
 	private JFrame frame;
 	FenetreConnexion fenetreConnexion = new FenetreConnexion();
 	FenetreDeconnexion fenetreDeconnexion = new FenetreDeconnexion();
-	FenetreDossier fenetreDossier = new FenetreDossier();
+	FenetreDossierMedical fenetreDossier = new FenetreDossierMedical();
 
 	/**
 	 * Launch the application.

@@ -16,9 +16,9 @@ public class FenetrePrincipale extends JFrame {
     setResizable(false);
     //getContentPane().setLayout(new BorderLayout());
     setVisible(true);
-    afficherFenetreConnexion();
+  /*  afficherFenetreConnexion();
     afficherFenetreDeconnexion();
-    afficherFenetreDossierPatient();
+    afficherFenetreDossierPatient();*/
   }
 
   public void afficherFenetreConnexion(){
