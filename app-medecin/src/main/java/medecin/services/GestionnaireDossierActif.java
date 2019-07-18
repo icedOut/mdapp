@@ -51,8 +51,8 @@ public class GestionnaireDossierActif {
 
   public static DossierMedical enregistrerModification(DossierMedical modification){
     modificationEnCours = modification;
-    if(System.currentTimeMillis() + 3000 > lastModificationTime){
-      //lastModificationTime = System.currentTimeMillis();
+    if(System.currentTimeMillis() + 1000 > lastModificationTime){
+      lastModificationTime = System.currentTimeMillis();
       String token = GestionnaireSession.getToken();
       DossierMedical nouvelEtat = ClientHTTP.envoyerModification(modificationEnCours, token);
       if(nouvelEtat != null){
