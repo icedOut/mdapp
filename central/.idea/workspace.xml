@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c45a0f7-33aa-44e4-a5fa-95a3a571db69" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../app-medecin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreConnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreConnexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreCoordonnee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreCoordonnee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreDeconnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreDeconnexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreDossierMedical.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreDossierMedical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreListeAntecedent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreListeAntecedent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreListeVisites.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreListeVisites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetrePrincipale.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetrePrincipale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreDossierMedical.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreDossierMedical.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeAntecedent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeAntecedent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeVisites.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeVisites.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/target/medecin-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/medecin-0.0.1.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -354,9 +343,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="23" width="1584" height="975" extended-state="0" />
+    <frame x="62" y="23" width="1584" height="975" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.26459143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.26459143" />
       <window_info id="Structure" order="1" sideWeight="0.5009862" side_tool="true" weight="0.2569956" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -365,7 +355,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50088185" side_tool="true" weight="0.2569956" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32842582" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4371461" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4371461" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25707814" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

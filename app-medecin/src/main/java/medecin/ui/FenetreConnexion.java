@@ -2,16 +2,13 @@ package medecin.ui;
 
 import medecin.controlleur.ControlleurConnexion;
 
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.JLabel;
-import javax.swing.JButton;
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class FenetreConnexion extends JPanel implements ActionListener {
   private JTextField username;
-  private JTextField password;
+  private JPasswordField password;
   private JLabel errorMsg = new JLabel("");
   /**
    * Create the panel.
@@ -24,7 +21,7 @@ public class FenetreConnexion extends JPanel implements ActionListener {
     add(username);
     username.setColumns(10);
 
-    password = new JTextField();
+    password = new JPasswordField();
     password.setBounds(0, 94, 281, 26);
     add(password);
     password.setColumns(10);

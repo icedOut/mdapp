@@ -69,6 +69,7 @@ public class FenetrePrincipale implements PropertyChangeListener {
 	private void afficherFenetreDossier(){
 		fenetreConnexion.effacePassword();
 		fenetreConnexion.effaceUsername();
+		frame.getContentPane().remove(fenetreConnexion);
 		frame.getContentPane().add(fenetreDossier);
 		frame.repaint();
 	}
@@ -88,6 +89,7 @@ public class FenetrePrincipale implements PropertyChangeListener {
 			afficherFenetreDossier();
 		}
 		if(property.compareTo("disconnect") == 0 && (boolean)evt.getNewValue() == true){
+			frame.getContentPane().add(fenetreConnexion);
 			cacherFenetreDossier();
 		}
 	}
