@@ -3,60 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="9c45a0f7-33aa-44e4-a5fa-95a3a571db69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medecin/FenetrePrincipale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medecin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medecin/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medecin/controlleur/ControllerModifierDossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medecin/controlleur/ControllerModifierDossier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreCoordonnee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreCoordonnee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreDossierMedical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreDossierMedical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeAntecedent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeAntecedent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeVisites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeVisites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medecin/ui/FenetrePrincipale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/controlleur/ControlleurChargerDossier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/controlleur/ControlleurConnexion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/AdresseResidentielle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/AntecedentMedical.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/Coordonnee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/DemandeAnnulationModification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/DemandeAuthentification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/DossierMedical.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/EtablissementSante.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/Genre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/Medecin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/ModificationDossier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/NumeroTelephone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/Parent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/Patient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/PersonnelSante.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/ProfessionelSante.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/ReponseAuthentification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/Session.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/Traitement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/TypePermission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/TypeTelephone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/Utilisateur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/UtilisateurRAMQ.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/models/VisiteMedicale.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/services/GestionnaireAuthentification.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/services/GestionnaireDossierActif.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/services/GestionnaireSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/ui/FenetreConnexion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/ui/FenetreCoordonnee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/ui/FenetreDeconnexion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/ui/FenetreDossierMedical.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/ui/FenetreListeAntecedent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/ui/FenetreListeVisites.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/ui/FenetrePrincipale.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/utils/ClientHTTP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medecin/utils/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/medecin-0.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/medecin/ui/FenetreListeAntecedent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/medecin/ui/FenetreListeAntecedent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/medecin-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/medecin-0.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../central/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../central/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/ramq.db" beforeDir="false" afterPath="$PROJECT_DIR$/../central/ramq.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/data/SqLitePooledConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/data/SqLitePooledConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/java/central/data/SqLiteSingleConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/java/central/data/SqLiteSingleConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../central/src/main/resources/ramq.db" beforeDir="false" afterPath="$PROJECT_DIR$/../central/src/main/resources/ramq.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/target/central-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/central-0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/target/central-0.0.1.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/central-0.0.1.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/target/classes/META-INF/myproject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/target/classes/ramq.db" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/classes/ramq.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../central/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../central/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,21 +36,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreDossierMedical.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="132" column="34" lean-forward="true" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+            <state relative-caret-position="926">
+              <caret line="132" column="34" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1479#1825#0" expanded="true" />
-                <element signature="e#1824#1825#0" expanded="true" />
-                <element signature="e#2199#2775#0" expanded="true" />
-                <element signature="e#2774#2775#0" expanded="true" />
-                <element signature="e#2956#3513#0" expanded="true" />
-                <element signature="e#3512#3513#0" expanded="true" />
-                <element signature="e#3863#4074#0" expanded="true" />
-                <element signature="e#4073#4074#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/medecin/controlleur/ControllerModifierDossier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="210">
               <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -109,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/medecin/utils/DateFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="165">
               <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -123,12 +77,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/medecin/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="1320">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#589#774#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreConnexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-326">
+            <state relative-caret-position="150">
               <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -158,16 +110,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreCoordonnee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
+            <state relative-caret-position="105">
               <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1151#1152#0" expanded="true" />
-                <element signature="e#1192#1193#0" expanded="true" />
-                <element signature="e#1243#1244#0" expanded="true" />
-                <element signature="e#1287#1288#0" expanded="true" />
-                <element signature="e#1341#1342#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,18 +122,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeAntecedent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1672">
-              <caret line="117" column="43" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
+            <state relative-caret-position="386">
+              <caret line="154" column="8" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1967#1968#0" expanded="true" />
-                <element signature="e#2011#2012#0" expanded="true" />
-                <element signature="e#4364#4686#0" expanded="true" />
-                <element signature="e#4685#4686#0" expanded="true" />
-                <element signature="e#5494#5667#0" expanded="true" />
-                <element signature="e#5666#5667#0" expanded="true" />
-                <element signature="e#6165#6350#0" expanded="true" />
-                <element signature="e#6349#6350#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,17 +134,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeVisites.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="119" column="36" lean-forward="true" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+            <state relative-caret-position="599">
+              <caret line="90" column="45" lean-forward="true" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1510#1511#0" expanded="true" />
-                <element signature="e#1550#1551#0" expanded="true" />
-                <element signature="e#2328#2574#0" expanded="true" />
-                <element signature="e#2573#2574#0" expanded="true" />
-                <element signature="e#2802#2961#0" expanded="true" />
-                <element signature="e#2960#2961#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -277,13 +218,13 @@
         <option value="$PROJECT_DIR$/src/main/java/medecin/FenetrePrincipale.java" />
         <option value="$PROJECT_DIR$/src/main/java/medecin/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreDossierMedical.java" />
-        <option value="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeVisites.java" />
         <option value="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeAntecedent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeVisites.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="122" />
+    <option name="x" value="121" />
     <option name="y" value="25" />
     <option name="width" value="1490" />
     <option name="height" value="976" />
@@ -294,8 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -452,7 +393,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Maven.medecin [clean,package,exec:exec]" />
     </list>
     <recent_temporary>
@@ -479,10 +419,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="122" y="25" width="1490" height="976" extended-state="0" />
+    <frame x="121" y="25" width="1490" height="976" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.28107736" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.2845304" />
       <window_info id="Structure" order="1" sideWeight="0.5009862" side_tool="true" weight="0.2569956" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -491,7 +431,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50088185" side_tool="true" weight="0.2569956" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3280543" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2975113" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2975113" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4915254" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -739,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/medecin/controlleur/ControlleurChargerDossier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -810,10 +743,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreConnexion.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetrePrincipale2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/controlleur/ControllerModifierDossier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-326">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="210">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -822,7 +756,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/medecin/utils/DateFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="165">
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -832,46 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/controlleur/ControllerModifierDossier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreCoordonnee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/medecin/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetrePrincipale2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="1320">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -885,67 +783,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreConnexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="150">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#589#774#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeVisites.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreCoordonnee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="119" column="36" lean-forward="true" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
+        <state relative-caret-position="105">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1510#1511#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
-            <element signature="e#2328#2574#0" expanded="true" />
-            <element signature="e#2573#2574#0" expanded="true" />
-            <element signature="e#2802#2961#0" expanded="true" />
-            <element signature="e#2960#2961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeAntecedent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="117" column="43" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1967#1968#0" expanded="true" />
-            <element signature="e#2011#2012#0" expanded="true" />
-            <element signature="e#4364#4686#0" expanded="true" />
-            <element signature="e#4685#4686#0" expanded="true" />
-            <element signature="e#5494#5667#0" expanded="true" />
-            <element signature="e#5666#5667#0" expanded="true" />
-            <element signature="e#6165#6350#0" expanded="true" />
-            <element signature="e#6349#6350#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreDossierMedical.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="132" column="34" lean-forward="true" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+        <state relative-caret-position="926">
+          <caret line="132" column="34" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1479#1825#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#2199#2775#0" expanded="true" />
-            <element signature="e#2774#2775#0" expanded="true" />
-            <element signature="e#2956#3513#0" expanded="true" />
-            <element signature="e#3512#3513#0" expanded="true" />
-            <element signature="e#3863#4074#0" expanded="true" />
-            <element signature="e#4073#4074#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeAntecedent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="154" column="8" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/medecin/ui/FenetreListeVisites.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="90" column="45" lean-forward="true" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>

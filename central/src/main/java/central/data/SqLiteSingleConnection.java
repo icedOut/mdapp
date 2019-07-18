@@ -7,6 +7,8 @@ import com.j256.ormlite.jdbc.JdbcPooledConnectionSource;
 import com.j256.ormlite.jdbc.JdbcSingleConnectionSource;
 
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.*;
 import java.util.Map;
 import java.util.Properties;
@@ -40,7 +42,14 @@ public class SqLiteSingleConnection implements JDBCConnectionHelper {
   private JdbcSingleConnectionSource getConnection() {
     if (conn != null) return conn;
     Properties conf = Config.getConfig();
-    String url = conf.getProperty("db_conn_string");
+    String scheme = conf.getProperty("db_scheme");
+    String dbName = conf.getProperty("db_name");
+
+    Path currentRelativePath = Paths.get("");
+    String path = currentRelativePath.toAbsolutePath().toString();
+
+    String url = scheme.concat(path).concat("/").concat(dbName);
+
 
     Properties connectionProps = new Properties();
     connectionProps.put("user", conf.getProperty("user"));

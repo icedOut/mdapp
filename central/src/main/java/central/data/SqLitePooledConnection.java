@@ -4,6 +4,8 @@ import central.utils.Config;
 import com.j256.ormlite.jdbc.JdbcPooledConnectionSource;
 import com.j256.ormlite.support.BaseConnectionSource;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.util.Properties;
 
@@ -37,12 +39,19 @@ public class SqLitePooledConnection implements JDBCConnectionHelper{
     try {
 
       Properties conf = Config.getConfig();
-      String url = conf.getProperty("db_conn_string");
+      String scheme = conf.getProperty("db_scheme");
+      String dbName = conf.getProperty("db_name");
+
+      Path currentRelativePath = Paths.get("");
+      String path = currentRelativePath.toAbsolutePath().toString();
+
+      String url = scheme.concat(path).concat("/").concat(dbName);
 
       conn = new JdbcPooledConnectionSource(url);
       conn.setMaxConnectionsFree(5);
       System.out.println("Connected to the RAMQ database successfully.");
     } catch (SQLException e) {
+      System.out.println("Erreur lors de la connexion à la base de données");
       System.out.println(e.getMessage());
     }
 

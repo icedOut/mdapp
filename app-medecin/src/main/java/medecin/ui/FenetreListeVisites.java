@@ -45,6 +45,9 @@ public class FenetreListeVisites extends JPanel{
   public void setListeVisites(List<VisiteMedicale> visites){
     this.visitesActives = visites;
     this.visiteList.setListData(visites.toArray());
+    if(currentVisiteIdx >= 0 && currentVisiteIdx < visites.size()){
+      afficherVisiteSelectionnee(visites.get(currentVisiteIdx));
+    }
   }
 
   public void showAddVisiteButton(boolean add){
@@ -76,6 +79,7 @@ public class FenetreListeVisites extends JPanel{
     this.visiteList.addListSelectionListener(new ListSelectionListener() {
       @Override
       public void valueChanged(ListSelectionEvent e) {
+        if(visiteList.getSelectedIndex() < 0) return;
         currentVisiteIdx = visiteList.getSelectedIndex();
         afficherVisiteSelectionnee(visitesActives.get(currentVisiteIdx));
       }
