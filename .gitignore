@@ -4,6 +4,10 @@ gof/
 
 central/.idea/
 central/target/
+central/.settings/
 
 app-medecin/.idea/
-pp-medecin/target/
+app-medecin/target/
+app-medecin/.services/
+
+*.DS_Store
