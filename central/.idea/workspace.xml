@@ -3,7 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="9c45a0f7-33aa-44e4-a5fa-95a3a571db69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../app-medecin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreConnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreConnexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/myproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/myproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/FenetrePrincipale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/controlleur/ControllerModifierDossier.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/controlleur/ControllerModifierDossier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreCoordonnee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreCoordonnee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreDossierMedical.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreDossierMedical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreListeAntecedent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreListeAntecedent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreListeVisites.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetreListeVisites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/src/main/java/medecin/ui/FenetrePrincipale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreCoordonnee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreCoordonnee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreDossierMedical.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreDossierMedical.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeAntecedent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeAntecedent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeVisites.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetreListeVisites.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/target/classes/medecin/ui/FenetrePrincipale.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-medecin/target/medecin-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../app-medecin/target/medecin-0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ramq.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ramq.db" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -186,8 +207,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="62" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="437" />
     <option name="y" value="23" />
     <option name="width" value="1584" />
     <option name="height" value="975" />
@@ -343,7 +364,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="23" width="1584" height="975" extended-state="1" />
+    <frame x="437" y="23" width="1584" height="975" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.26459143" />
@@ -796,7 +817,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>

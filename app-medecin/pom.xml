@@ -24,7 +24,7 @@
 						<!-- automatically creates the classpath using all project dependencies,
                              also adding the project build directory -->
 						<classpath/>
-						<argument>medecin.FenetrePrincipale</argument>
+						<argument>medecin.Main</argument>
 						...
 					</arguments>
 				</configuration>

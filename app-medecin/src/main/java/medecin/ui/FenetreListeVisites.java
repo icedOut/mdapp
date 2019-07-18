@@ -26,12 +26,12 @@ public class FenetreListeVisites extends JPanel{
   private JTextField visiteMedicamentField;
 
 
-  JLabel visiteMedicalesLabel = new JLabel("Visites médicales");
-  JLabel visiteNotesLabel = new JLabel("Notes");
-  JLabel visiteResumeLabel = new JLabel("Resume");
-  JLabel visiteDiagnosticLabel = new JLabel("Diagnostic");
-  JLabel visiteTraitementLabel = new JLabel("Traitement");
-  JLabel visiteMedicamentLabel = new JLabel("Medicament");
+  private JLabel visiteMedicalesLabel = new JLabel("Visites médicales");
+  private JLabel visiteNotesLabel = new JLabel("Notes");
+  private JLabel visiteResumeLabel = new JLabel("Resume");
+  private JLabel visiteDiagnosticLabel = new JLabel("Diagnostic");
+  private JLabel visiteTraitementLabel = new JLabel("Traitement");
+  private JLabel visiteMedicamentLabel = new JLabel("Medicament");
 
   private int currentVisiteIdx = 0;
 
@@ -42,7 +42,7 @@ public class FenetreListeVisites extends JPanel{
   }
 
 
-  public void afficherListeVisites(List<VisiteMedicale> visites){
+  public void setListeVisites(List<VisiteMedicale> visites){
     this.visitesActives = visites;
     this.visiteList.setListData(visites.toArray());
   }
@@ -99,7 +99,7 @@ public class FenetreListeVisites extends JPanel{
 
   private void afficherMedicament(){
     visiteMedicamentField = new JTextField();
-    visiteMedicamentField.setBounds(101, 409, 350, 26);
+    visiteMedicamentField.setBounds(101, 409, 350, 20);
     visiteMedicamentField.addKeyListener(new KeyListener() {
       @Override
       public void keyTyped(KeyEvent e) {}
@@ -110,7 +110,7 @@ public class FenetreListeVisites extends JPanel{
       @Override
       public void keyReleased(KeyEvent e) {
         visitesActives.get(currentVisiteIdx).traitement.medicament = visiteMedicamentField.getText();
-        firePropertyChange("updateVisite", visitesActives, visitesActives);
+        firePropertyChange("updateVisite", null, visitesActives);
       }
     });
     add(visiteMedicamentField);
@@ -119,7 +119,7 @@ public class FenetreListeVisites extends JPanel{
 
   private void afficherTraitement(){
     visiteTraitementField = new JTextField();
-    visiteTraitementField.setBounds(101, 372, 350, 27);
+    visiteTraitementField.setBounds(101, 372, 350, 20);
     visiteTraitementField.addKeyListener(new KeyListener() {
       @Override
       public void keyTyped(KeyEvent e) {}
@@ -130,7 +130,7 @@ public class FenetreListeVisites extends JPanel{
       @Override
       public void keyReleased(KeyEvent e) {
         visitesActives.get(currentVisiteIdx).traitement.nomTraitement = visiteTraitementField.getText();
-        firePropertyChange("updateVisite", visitesActives, visitesActives);
+        firePropertyChange("updateVisite", null, visitesActives);
       }
     });
     add(visiteTraitementField);
@@ -150,7 +150,7 @@ public class FenetreListeVisites extends JPanel{
       @Override
       public void keyReleased(KeyEvent e) {
         visitesActives.get(currentVisiteIdx).diagnostic = visiteDiagnosticField.getText();
-        firePropertyChange("updateVisite", visitesActives, visitesActives);
+        firePropertyChange("updateVisite", null, visitesActives);
       }
     });
     add(visiteDiagnosticField);
@@ -169,7 +169,7 @@ public class FenetreListeVisites extends JPanel{
       @Override
       public void keyReleased(KeyEvent e) {
         visitesActives.get(currentVisiteIdx).resume = visiteResumeField.getText();
-        firePropertyChange("updateVisite", visitesActives, visitesActives);
+        firePropertyChange("updateVisite", null, visitesActives);
       }
     });
     add(visiteResumeField);
@@ -187,7 +187,7 @@ public class FenetreListeVisites extends JPanel{
       @Override
       public void keyReleased(KeyEvent e) {
         visitesActives.get(currentVisiteIdx).notes = visiteNotesField.getText();
-        firePropertyChange("updateVisite", visitesActives, visitesActives);
+        firePropertyChange("updateVisite", null, visitesActives);
       }
     });
     add(visiteNotesField);
@@ -208,7 +208,7 @@ public class FenetreListeVisites extends JPanel{
     visiteDiagnosticLabel.setBounds(6, 344, 95, 16);
     add(visiteDiagnosticLabel);
 
-    visiteTraitementLabel.setBounds(6, 383, 95, 16);
+    visiteTraitementLabel.setBounds(6, 378, 95, 16);
     add(visiteTraitementLabel);
 
     visiteMedicamentLabel.setBounds(6, 414, 76, 16);

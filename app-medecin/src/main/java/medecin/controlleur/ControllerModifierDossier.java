@@ -15,6 +15,7 @@ public class ControllerModifierDossier {
   }
 
   public static DossierMedical ajouterAntecedent(){
+    System.out.println("add ante");
     DossierMedical dossierModifie = GestionnaireDossierActif.ajouterAntecedent();
     return dossierModifie;
   }

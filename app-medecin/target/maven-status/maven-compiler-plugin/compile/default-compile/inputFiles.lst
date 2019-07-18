@@ -1,6 +1,5 @@
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/PersonnelSante.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/Traitement.java
-/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/ui/FenetrePrincipale.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/AdresseResidentielle.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/Parent.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/VisiteMedicale.java
@@ -16,7 +15,6 @@
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/Session.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/ModificationDossier.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/bui/FenetreConnexion.java
-/Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/FenetrePrincipale.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/controlleur/ControlleurChargerDossier.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/Medecin.java
 /Users/oliviercampeau/Desktop/UQAM/Informatique/2019-ETE/INF-5153/Projet/TP3/app-medecin/src/main/java/medecin/models/VisitePrototype.java

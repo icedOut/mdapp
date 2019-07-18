@@ -9,9 +9,9 @@ import java.util.List;
 public class FenetreCoordonnee extends JPanel{
 
 
-  private JLabel lblPlaceholderNom = new JLabel("placeholder nom");
-  private JLabel lblPlaceholderPrenom = new JLabel("placeholder prenom");
-  private JLabel lblPlaceholderAddresse = new JLabel("placeholder addresse");
+  private JLabel lblPlaceholderNom = new JLabel(" ");
+  private JLabel lblPlaceholderPrenom = new JLabel(" ");
+  private JLabel lblPlaceholderAddresse = new JLabel(" ");
   /**
    * Create the panel.
    */
