@@ -13,3 +13,4 @@ app-medecin/.settings/
 rapport/
 
 *.DS_Store
+*.db

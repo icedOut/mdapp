@@ -1,1 +1,0 @@
-docker run --name post_reservation -e POSTGRES_PASSWORD=reservation -p 10000:5432 -e POSTGRES_USER=reservation -e POSTGRES_DB=reservation -v `pwd`/init/init.sql:/docker-entrypoint-initdb.d/init.sql -d mdillon/postgis
