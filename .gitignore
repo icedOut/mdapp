@@ -10,4 +10,6 @@ app-medecin/.idea/
 app-medecin/target/
 app-medecin/.services/
 
+rapport/
+
 *.DS_Store
