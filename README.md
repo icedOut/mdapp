@@ -13,7 +13,7 @@ sqlite3 ramq.db < ramq.sql
 Assurez-vous d'exécuter cette commande là dans le répertoire `/central/`, là où se trouve le script SQL. 
 
 Il faut absolument que la base de données soit dans le répertoire `/central/`, dans le même 
-répertoire où se trouve le script `ramq.SQL`,  sinon la référence ne fonctionnera pas.
+répertoire où se trouve le script `ramq.sql`,  sinon la référence ne fonctionnera pas.
 
 
 ### Démarrer le serveur
@@ -47,5 +47,5 @@ Pour charger un dossier, il y a trois dossiers existants dans la base de donnée
 * RAMQ00000002
 * RAMQ00000003
 
-Pour de plus amples informations, la dewrnière page du rapport final PDF remis pour ce travail
+Pour de plus amples informations, la dernière page du rapport final PDF remis pour ce travail
 contient des captures d'écran qui expliquent comment utiliser l'application.
